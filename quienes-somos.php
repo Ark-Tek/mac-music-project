@@ -17,8 +17,7 @@
 <?php include 'partials/subnav.php'; ?>
 
     <section class="page-body">
-      <p class="eyebrow">Quiénes Somos</p>
-      <h1>Quiénes Somos</h1>
+      <h1>Mac Music Project</h1>
       <p class="lede">MANIFIESTO ARTÍSTICO</p>
 
       <p style="max-width:60ch; color:var(--paper-dim); font-size:15px; line-height:1.8; margin-bottom:24px;">
