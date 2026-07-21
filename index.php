@@ -18,7 +18,7 @@
 
     <section class="hero">
       <h1>Mac Music&nbsp;Project</h1>
-      <p>MAC Music Project explora nuevas formas de creación musical combinando talento humano e inteligencia artificial. Descubre nuestra música, el proceso creativo y todo lo que da vida al proyecto.</p>
+      <p>Mac Music Project explora nuevas formas de creación musical combinando talento humano e inteligencia artificial. Descubre nuestra música, el proceso creativo y todo lo que da vida al proyecto.</p>
     </section>
 
     <nav class="tracklist" aria-label="Secciones del sitio">
