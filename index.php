@@ -18,7 +18,7 @@
 
     <section class="hero">
       <h1>Mac Music&nbsp;Project</h1>
-      <p>Producción y lanzamiento de música electrónica sin filtros. Cada sonido sale del estudio directo a tus oídos — sin intermediarios, sin fórmulas repetidas.</p>
+      <p>MAC Music Project explora nuevas formas de creación musical combinando talento humano e inteligencia artificial. Descubre nuestra música, el proceso creativo y todo lo que da vida al proyecto.</p>
     </section>
 
     <nav class="tracklist" aria-label="Secciones del sitio">
