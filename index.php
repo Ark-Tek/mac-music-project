@@ -29,11 +29,6 @@
         <span class="nav-btn-arrow">→</span>
       </a>
 
-      <a class="nav-btn" href="quienes-somos.php">
-        <span class="nav-btn-label">Quiénes Somos</span>
-        <span class="nav-btn-desc">La historia del proyecto</span>
-        <span class="nav-btn-arrow">→</span>
-      </a>
 
       <a class="nav-btn" href="noticias.php">
         <span class="nav-btn-label">Noticias</span>
