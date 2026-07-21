@@ -23,7 +23,7 @@
 
     <nav class="tracklist" aria-label="Secciones del sitio">
 
-      <a class="nav-btn" href="index.php">
+      <a class="nav-btn" href="quienes-somos.php">
         <span class="nav-btn-label">Mac Music Project</span>
         <span class="nav-btn-desc">Inicio</span>
         <span class="nav-btn-arrow">→</span>
