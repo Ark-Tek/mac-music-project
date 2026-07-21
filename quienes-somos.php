@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quiénes Somos — Mac Music Project</title>
+<title>Mac Music Project</title>
 <?php include 'partials/head-assets.php'; ?>
 </head>
 <body data-page="quienes-somos">
