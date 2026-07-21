@@ -7,7 +7,7 @@
 <?php include 'partials/head-assets.php'; ?>
 </head>
 <body data-page="noticias">
-
+<?php include 'partials/cookie-banner.php'; ?>
 <div class="layout">
 
 <?php include 'partials/brand-panel.php'; ?>
