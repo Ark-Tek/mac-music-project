@@ -26,18 +26,19 @@
       $releases = [
         [
           'type'      => 'spotify',
-          'title'     => 'Nombre de la pista (placeholder)',
+          'title'     => 'Olas Negras',
           'desc'      => 'Sencillo — 2026',
           'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
-          'thumbnail' => 'assets/logo.jpg',
+          'thumbnail' => 'assets/portada_olas_negras.png',
           'synopsis'  => 'Escrito y producido en 2026 — sustituye este texto por la sinopsis real de la pista.',
         ],
         [
-          'type'      => 'youtube',
-          'title'     => 'Video musical (placeholder)',
-          'desc'      => 'Video oficial',
-          'url'       => 'https://www.youtube.com/watch?v=REPLACE_WITH_REAL_VIDEO_ID',
-          'synopsis'  => 'Sustituye por la sinopsis real del video.',
+          'type'      => 'spotify',
+          'title'     => 'Soledad',
+          'desc'      => 'Sencillo — 2026',
+          'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
+          'thumbnail' => 'assets/portada_soledad.png',
+          'synopsis'  => 'Escrito y producido en 2026 — sustituye este texto por la sinopsis real de la pista.',
         ],
         [
           'type'      => 'tiktok',
