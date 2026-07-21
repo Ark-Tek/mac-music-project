@@ -711,6 +711,10 @@ a { color: inherit; text-decoration: none; }
   padding: 20px;
 }
 
+.cookie-config[hidden] {
+  display: none;
+}
+
 .cookie-config-inner {
   background: var(--panel);
   border: 1px solid var(--line);
