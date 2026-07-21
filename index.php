@@ -3,25 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MAC Music Project</title>
+<title>Mac Music Project</title>
 <meta name="description" content="Mac Music Project — producción, lanzamientos y noticias del proyecto.">
-<link rel="icon" href="assets/logo.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<?php include 'partials/head-assets.php'; ?>
 </head>
 <body data-page="home">
 
 <div class="layout">
 
-  <!-- STATIC BRAND HALF -->
-  <aside class="brand-panel" aria-label="Mac Music Project">
-    <div class="brand-mark">
-      
-      <img src="assets/logo.jpg" alt="MAC Music Project logo">
-      <!--<<p class="brand-caption">Est. Proyecto Musical &middot; <a href="mailto:mac@macmusicproject.com">mac@macmusicproject.com</a></p> -->
-    </div>
-  </aside>
+<?php include 'partials/brand-panel.php'; ?>
 
   <!-- CONTENT HALF -->
   <main class="content-panel">
@@ -33,38 +23,44 @@
 
     <nav class="tracklist" aria-label="Secciones del sitio">
 
-      <a class="nav-btn" href="index.html">
+      <a class="nav-btn" href="index.php">
         <span class="nav-btn-label">Mac Music Project</span>
         <span class="nav-btn-desc">Inicio</span>
         <span class="nav-btn-arrow">→</span>
       </a>
 
-      <a class="nav-btn" href="noticias.html">
+      <a class="nav-btn" href="quienes-somos.php">
+        <span class="nav-btn-label">Quiénes Somos</span>
+        <span class="nav-btn-desc">La historia del proyecto</span>
+        <span class="nav-btn-arrow">→</span>
+      </a>
+
+      <a class="nav-btn" href="noticias.php">
         <span class="nav-btn-label">Noticias</span>
         <span class="nav-btn-desc">Lo último del proyecto</span>
         <span class="nav-btn-arrow">→</span>
       </a>
 
-      <a class="nav-btn" href="lanzamientos.html">
+      <a class="nav-btn" href="lanzamientos.php">
         <span class="nav-btn-label">Lanzamientos</span>
         <span class="nav-btn-desc">Música ya disponible</span>
         <span class="nav-btn-arrow">→</span>
       </a>
 
-      <a class="nav-btn" href="futuros-lanzamientos.html">
+      <a class="nav-btn" href="futuros-lanzamientos.php">
         <span class="nav-btn-label">Futuros Lanzamientos</span>
         <span class="nav-btn-desc">Próximo en el calendario</span>
         <span class="nav-btn-arrow">→</span>
       </a>
 
-      <a class="nav-btn" href="contactanos.html">
+      <a class="nav-btn" href="contactanos.php">
         <span class="nav-btn-label">Contáctanos</span>
         <span class="nav-btn-desc">Hablemos</span>
         <span class="nav-btn-arrow">→</span>
       </a>
     </nav>
 
-    <footer class="site-footer">MAC Music Project &copy; 2026</footer>
+<?php include 'partials/footer.php'; ?>
   </main>
 
 </div>
