@@ -18,7 +18,7 @@
 
     <section class="page-body">
       <h1>Mac Music Project</h1>
-      <p class="lede">MANIFIESTO ARTÍSTICO</p>
+      <p class="lede">🎧MANIFIESTO ARTÍSTICO</p>
 
       <p style="max-width:60ch; color:var(--paper-dim); font-size:15px; line-height:1.8; margin-bottom:24px;">
         La música siempre ha sido un territorio en transformación. Hoy, esa transformación se acelera.
