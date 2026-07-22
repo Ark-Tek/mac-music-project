@@ -66,29 +66,31 @@ function default_thumbnail(array $item): string {
     return 'assets/logo.jpg';
 }
 
+function build_synopsis_html($synopsis): string {
+    $synopsis_html = '';
+    if (is_array($synopsis)) {
+        $s_title    = htmlspecialchars($synopsis['title'] ?? '');
+        $s_subtitle = htmlspecialchars($synopsis['subtitle'] ?? '');
+        $s_body     = $synopsis['body'] ?? ''; // Body contains intentional HTML
+
+        $synopsis_html .= '<div class="release-synopsis-structured">';
+        if ($s_title !== '')    $synopsis_html .= '<h3 class="synopsis-title">' . $s_title . '</h3>';
+        if ($s_subtitle !== '') $synopsis_html .= '<p class="synopsis-subtitle">' . $s_subtitle . '</p>';
+        if ($s_body !== '')     $synopsis_html .= '<div class="synopsis-body">' . $s_body . '</div>';
+        $synopsis_html .= '</div>';
+    } elseif (is_string($synopsis) && $synopsis !== '') {
+        $synopsis_html = '<p class="release-synopsis">' . htmlspecialchars($synopsis) . '</p>';
+    }
+    return $synopsis_html;
+}
+
 function render_release(array $item): string {
     $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
     $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
     $type      = $item['type'] ?? '';
     $url       = $item['url'] ?? '';
     $thumbnail = htmlspecialchars(default_thumbnail($item), ENT_QUOTES);
-
-    // ✅ Handle structured synopsis (Array) vs old string
-    $synopsis_html = '';
-    if (isset($item['synopsis']) && is_array($item['synopsis'])) {
-        $s_title    = htmlspecialchars($item['synopsis']['title'] ?? '');
-        $s_subtitle = htmlspecialchars($item['synopsis']['subtitle'] ?? '');
-        $s_body     = $item['synopsis']['body'] ?? ''; // Body contains intentional HTML
-        
-        $synopsis_html .= '<div class="release-synopsis-structured">';
-        if ($s_title !== '')    $synopsis_html .= '<h3 class="synopsis-title">' . $s_title . '</h3>';
-        if ($s_subtitle !== '') $synopsis_html .= '<p class="synopsis-subtitle">' . $s_subtitle . '</p>';
-        if ($s_body !== '')     $synopsis_html .= '<div class="synopsis-body">' . $s_body . '</div>';
-        $synopsis_html .= '</div>';
-    } elseif (isset($item['synopsis']) && is_string($item['synopsis'])) {
-        // Fallback for simple string synopses
-        $synopsis_html = '<p class="release-synopsis">' . htmlspecialchars($item['synopsis']) . '</p>';
-    }
+    $synopsis_html = build_synopsis_html($item['synopsis'] ?? '');
 
     switch ($type) {
         case 'spotify':
@@ -124,12 +126,41 @@ function render_release(array $item): string {
 
     $html .= '<div class="release-card-body"></div>';
 
-    // ✅ Inject the formatted synopsis HTML
     if ($synopsis_html !== '') {
         $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
     }
 
     $html .= '<template class="release-embed-tpl">' . $embed . '</template>';
+
+    $html .= '</div>';
+
+    return $html;
+}
+
+function render_upcoming(array $item): string {
+    $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
+    $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
+    $thumbnail = htmlspecialchars(!empty($item['thumbnail']) ? $item['thumbnail'] : 'assets/logo.jpg', ENT_QUOTES);
+    $synopsis_html = build_synopsis_html($item['synopsis'] ?? '');
+
+    $html  = '<div class="release-card" data-type="upcoming">';
+
+    $html .= '<button class="release-thumb" type="button" aria-label="Ver información de ' . $title . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
+    $html .= '<span class="release-thumb-play release-thumb-info" aria-hidden="true">&#8505;</span>';
+    $html .= '</button>';
+
+    $html .= '<div class="release-card-head">';
+    $html .= '<span class="release-badge release-badge--upcoming">Próximamente</span>';
+    $html .= '<span class="release-card-title">' . $title . '</span>';
+    if ($desc !== '') {
+        $html .= '<span class="release-card-desc">' . $desc . '</span>';
+    }
+    $html .= '</div>';
+
+    if ($synopsis_html !== '') {
+        $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
+    }
 
     $html .= '</div>';
 
