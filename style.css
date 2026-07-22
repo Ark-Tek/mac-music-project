@@ -884,5 +884,5 @@ a { color: inherit; text-decoration: none; }
 
 .synopsis-body strong {
   color: var(--paper);
-  font-weight: 600;
+  font-weight: 300;
 }
