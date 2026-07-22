@@ -37,10 +37,10 @@
         ],
         [
           'type'      => 'spotify',
-          'title'     => 'Reza',
+          'title'     => 'La Picarona',
           'desc'      => 'Sencillo — 2026',
           'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
-          'thumbnail' => 'assets/portada_reza.png',
+          'thumbnail' => 'assets/portada_la_picarona.png',
           'synopsis' => [
     'title'    => 'LA PICARONA',
     'subtitle' => 'Una explosiva adaptación en salsa de la legendaria "La Fuente de Cacho"',
