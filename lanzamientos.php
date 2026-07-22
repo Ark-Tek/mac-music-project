@@ -43,7 +43,7 @@
           'thumbnail' => 'assets/portada_la_picarona.png',
           'synopsis' => [
     'title'    => 'LA PICARONA',
-    'subtitle' => 'Una explosiva adaptación en salsa de la legendaria <strong>"La Fuente de Cacho"</strong>',
+    'subtitle' => 'Una explosiva adaptación en salsa de la legendaria "La Fuente de Cacho"',
     'body'     => 'Desde el corazón de <strong>Santander (Cantabria, España)</strong> nace la inspiración de <em>La Picarona</em>. Una obra que conserva el alma de la tradición, pero la envuelve en un ritmo ardiente, sensual y contagioso, capaz de conquistar cualquier pista de baile del mundo.<br><br>Entre miradas que encienden la noche, sonrisas provocadoras y secretos que solo la madrugada conoce, la historia juega con el deseo, la seducción y la picardía. La protagonista despierta la imaginación de todos a su paso, mientras una pregunta resuena entre los acordes salseros: <strong>¿quién será la picarona que entretiene a ese hombre hasta las dos de la mañana?</strong><br><br>Con elegancia, doble sentido y un inconfundible sabor latino, <em>La Picarona</em> transforma una melodía que ha acompañado durante generaciones al pueblo cántabro en un himno moderno al baile, la pasión y la alegría de vivir.<br><br>Esta versión nace con un propósito claro: llevar el nombre de <strong>Santander</strong>, de <strong>Cantabria</strong> y de la histórica <strong>Fuente de Cacho</strong> mucho más allá de sus fronteras. Porque las grandes canciones no entienden de fronteras: se sienten, se cantan... y, sobre todo, <strong>se bailan</strong>.',
     ],
           ],
