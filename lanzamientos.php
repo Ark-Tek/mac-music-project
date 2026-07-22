@@ -30,14 +30,6 @@
           'desc'      => 'Sencillo — 2026',
           'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
           'thumbnail' => 'assets/portada_reza.png',
-          'synopsis'  => 'Escrito y producido en 2026 — sustituye este texto por la sinopsis real de la pista.',
-        ],
-        [
-          'type'      => 'spotify',
-          'title'     => 'Soledad',
-          'desc'      => 'Sencillo — 2026',
-          'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
-          'thumbnail' => 'assets/portada_soledad.png',
           'synopsis'  => 'REZA
 No pide ser creída. Impone su existencia.
 Nace desde un territorio de presión insoportable, donde la identidad fue puesta a prueba, atacada y empujada al límite del silencio. No habla de un conflicto: lo sobrevive.
@@ -51,7 +43,16 @@ Y cuando parece que todo termina, no hay redención: hay permanencia.
 El resultado no es una canción que se escucha: es una experiencia que se soporta.
 Un punto de ruptura donde el dolor deja de ser silencio y se convierte en respuesta.
 ¨REZA^ pertenece al EP titulado ¨OLAS NEGRAS¨,que será publicado el dia 11/09/2026.
-',
+          
+          ',
+        ],
+        [
+          'type'      => 'spotify',
+          'title'     => 'Soledad',
+          'desc'      => 'Sencillo — 2026',
+          'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
+          'thumbnail' => 'assets/portada_soledad.png',
+          'synopsis'  => 'Escrito y producido en 2026 — sustituye este texto por la sinopsis real de la pista.',
         ],
         [
           'type'      => 'tiktok',
