@@ -30,19 +30,21 @@
           'desc'      => 'Sencillo — 2026',
           'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
           'thumbnail' => 'assets/portada_reza.png',
-          'synopsis'  => 'REZA
-No pide ser creída. Impone su existencia.
-Nace desde un territorio de presión insoportable, donde la identidad fue puesta a prueba, atacada y empujada al límite del silencio. No habla de un conflicto: lo sobrevive.
-Es un blues roto, sucio, sin redención, atravesado por un gospel que ya no consuela, sino que arde. Una mezcla imposible entre lo espiritual y lo devastado, donde cada nota suena como si fuera la última resistencia antes del colapso.
-Aquí la verdad no es luz ni bandera: es una herida abierta que se niega a cerrarse aunque el mundo insista en enterrarla.
-No hay estructura que alivie. No hay estribillo que salve. No hay aire entre golpes.
-La canción avanza como una caída lenta hacia un punto donde el dolor deja de ser interno y se vuelve declaración.
-“REZA” toma su propio título y lo rompe desde dentro. Ya no es fe, ni súplica, ni devoción. Es la palabra dicha al borde del enfrentamiento, convertida en eco seco, en advertencia final.
-Cada verso es una prueba de supervivencia. Cada silencio, una marca de lo que intentó borrarse. Cada instante, una insistencia brutal en seguir existiendo incluso cuando todo empujaba hacia lo contrario.
-Y cuando parece que todo termina, no hay redención: hay permanencia.
-El resultado no es una canción que se escucha: es una experiencia que se soporta.
-Un punto de ruptura donde el dolor deja de ser silencio y se convierte en respuesta.
-¨REZA^ pertenece al EP titulado ¨OLAS NEGRAS¨,que será publicado el dia 11/09/2026.
+          'synopsis'  => '
+            <h3 class="synopsis-title">REZA</h3>
+            <p class="synopsis-subtitle">No pide ser creída. Impone su existencia.</p>
+            <div class="synopsis-body">
+<p>Nace desde un territorio de presión insoportable, donde la identidad fue puesta a prueba, atacada y empujada al límite del silencio. No habla de un conflicto: lo sobrevive.</p>
+<p>Es un blues roto, sucio, sin redención, atravesado por un gospel que ya no consuela, sino que arde. Una mezcla imposible entre lo espiritual y lo devastado, donde cada nota suena como si fuera la última resistencia antes del colapso.</p>
+<p>Aquí la verdad no es luz ni bandera: es una herida abierta que se niega a cerrarse aunque el mundo insista en enterrarla.</p>
+<p>No hay estructura que alivie. No hay estribillo que salve. No hay aire entre golpes.</p>
+<p>La canción avanza como una caída lenta hacia un punto donde el dolor deja de ser interno y se vuelve declaración.</p>
+<p>“REZA” toma su propio título y lo rompe desde dentro. Ya no es fe, ni súplica, ni devoción. Es la palabra dicha al borde del enfrentamiento, convertida en eco seco, en advertencia final.</p>
+<p>Cada verso es una prueba de supervivencia. Cada silencio, una marca de lo que intentó borrarse. Cada instante, una insistencia brutal en seguir existiendo incluso cuando todo empujaba hacia lo contrario.</p>
+<p>Y cuando parece que todo termina, no hay redención: hay permanencia.</p>
+<p>El resultado no es una canción que se escucha: es una experiencia que se soporta.</p>
+<p>Un punto de ruptura donde el dolor deja de ser silencio y se convierte en respuesta.</p>
+<p><strong>"REZA" pertenece al EP titulado ¨OLAS NEGRAS¨,que será publicado el dia 11/09/2026.</strong></p>
           
           ',
         ],
