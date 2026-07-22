@@ -1,7 +1,8 @@
 <?php
 /**
  * Embed helpers — convert a normal share link into the official,
- * platform-hosted embed markup.
+ * platform-hosted embed markup. No media file ever touches our
+ * own server; everything streams from Spotify/YouTube/TikTok.
  */
 
 function extract_youtube_id(string $url): string {
@@ -115,4 +116,22 @@ function render_release(array $item): string {
 
     $html .= '<div class="release-card-head">';
     $html .= '<span class="release-badge">' . $badge . '</span>';
-    $html .= '<span class
+    $html .= '<span class="release-card-title">' . $title . '</span>';
+    if ($desc !== '') {
+        $html .= '<span class="release-card-desc">' . $desc . '</span>';
+    }
+    $html .= '</div>';
+
+    $html .= '<div class="release-card-body"></div>';
+
+    // ✅ Inject the formatted synopsis HTML
+    if ($synopsis_html !== '') {
+        $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
+    }
+
+    $html .= '<template class="release-embed-tpl">' . $embed . '</template>';
+
+    $html .= '</div>';
+
+    return $html;
+}
