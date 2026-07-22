@@ -873,28 +873,28 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
-/* Structured synopsis container */
+/* Target the specific wrapper class used in embeds.php */
 .release-synopsis-wrapper {
   padding: 16px 18px;
   border-top: 1px dashed var(--line);
   margin-top: 0;
 }
 
-/* Title: Centered + H3 Size */
+/* Title: Centered + H3 Size using your display font */
 .synopsis-title {
-  font-family: var(--font-display); /* Matches your h1/h2 font */
-  font-size: clamp(1.15rem, 2vw, 1.4rem); /* Responsive H3-like size */
+  font-family: var(--font-display); /* Anton/Arial Narrow */
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* Responsive H3 size */
   font-weight: 400;
   color: var(--paper);
   text-align: center;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.4rem 0;
   letter-spacing: 0.01em;
 }
 
-/* Subtitle: Also H3 Size but Italic */
+/* Subtitle: Same H3 size but italic */
 .synopsis-subtitle {
   font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   font-weight: 400;
   font-style: italic;
   color: var(--paper-dim);
@@ -903,7 +903,6 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.01em;
 }
 
-/* Body Text */
 .synopsis-body {
   line-height: 1.65;
   font-size: 0.875rem;
