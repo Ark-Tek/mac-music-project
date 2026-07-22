@@ -1,10 +1,7 @@
 <?php
 /**
  * Embed helpers — convert a normal share link into the official,
- * platform-hosted embed markup. No media file ever touches our
- * own server; everything streams from Spotify/YouTube/TikTok.
- * Embeds are only injected into the page once the visitor clicks
- * the thumbnail — nothing loads or phones home before that.
+ * platform-hosted embed markup.
  */
 
 function extract_youtube_id(string $url): string {
@@ -75,7 +72,7 @@ function render_release(array $item): string {
     $url       = $item['url'] ?? '';
     $thumbnail = htmlspecialchars(default_thumbnail($item), ENT_QUOTES);
 
-    // ✅ NEW: Handle structured synopsis (Array) vs old string
+    // ✅ Handle structured synopsis (Array) vs old string
     $synopsis_html = '';
     if (isset($item['synopsis']) && is_array($item['synopsis'])) {
         $s_title    = htmlspecialchars($item['synopsis']['title'] ?? '');
@@ -118,22 +115,4 @@ function render_release(array $item): string {
 
     $html .= '<div class="release-card-head">';
     $html .= '<span class="release-badge">' . $badge . '</span>';
-    $html .= '<span class="release-card-title">' . $title . '</span>';
-    if ($desc !== '') {
-        $html .= '<span class="release-card-desc">' . $desc . '</span>';
-    }
-    $html .= '</div>';
-
-    $html .= '<div class="release-card-body"></div>';
-
-    // ✅ Inject the formatted synopsis HTML
-    if ($synopsis_html !== '') {
-        $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
-    }
-
-    $html .= '<template class="release-embed-tpl">' . $embed . '</template>';
-
-    $html .= '</div>';
-
-    return $html;
-}
+    $html .= '<span class
