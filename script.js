@@ -1,10 +1,5 @@
 // MAC MUSIC PROJECT — shared behaviour
 
-// ---------------------------------------------------------------
-// Cookie consent — AEPD-compliant: equal-weight accept/reject,
-// no pre-ticked boxes, third-party embeds blocked until consented.
-// ---------------------------------------------------------------
-
 const COOKIE_CONSENT_KEY = "mmp_cookie_consent";
 
 function getCookieConsent() {
@@ -20,9 +15,7 @@ function setCookieConsent(thirdparty) {
   const value = { necessary: true, thirdparty: !!thirdparty, ts: Date.now() };
   try {
     localStorage.setItem(COOKIE_CONSENT_KEY, JSON.stringify(value));
-  } catch (e) {
-    /* localStorage unavailable — consent just won't persist across visits */
-  }
+  } catch (e) {}
   return value;
 }
 
@@ -32,14 +25,14 @@ function hasThirdPartyConsent() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Highlight the current page in any subnav
+  // Highlight current page in subnav
   const current = document.body.getAttribute("data-page");
   if (current) {
     document.querySelectorAll(`.subnav-links a[data-page="${current}"]`)
       .forEach((el) => el.setAttribute("aria-current", "page"));
   }
 
-  // Stagger the homepage track-list buttons
+  // Stagger homepage track-list buttons
   document.querySelectorAll(".nav-btn").forEach((el, i) => {
     el.style.setProperty("--stagger", `${120 + i * 90}ms`);
   });
@@ -65,60 +58,43 @@ document.addEventListener("DOMContentLoaded", () => {
       config.hidden = false;
     };
 
-    if (!getCookieConsent()) {
-      showBanner();
-    }
+    if (!getCookieConsent()) showBanner();
 
-    acceptAllBtn && acceptAllBtn.addEventListener("click", () => {
-      setCookieConsent(true);
-      hideBanner();
-    });
+    acceptAllBtn?.addEventListener("click", () => { setCookieConsent(true); hideBanner(); });
+    rejectAllBtn?.addEventListener("click", () => { setCookieConsent(false); hideBanner(); });
+    openConfigBtn?.addEventListener("click", () => { hideBanner(); showConfig(); });
+    configSaveBtn?.addEventListener("click", () => { setCookieConsent(configThirdparty.checked); hideConfig(); });
+    configRejectBtn?.addEventListener("click", () => { setCookieConsent(false); hideConfig(); });
 
-    rejectAllBtn && rejectAllBtn.addEventListener("click", () => {
-      setCookieConsent(false);
-      hideBanner();
-    });
-
-    openConfigBtn && openConfigBtn.addEventListener("click", () => {
-      hideBanner();
-      showConfig();
-    });
-
-    configSaveBtn && configSaveBtn.addEventListener("click", () => {
-      setCookieConsent(configThirdparty.checked);
-      hideConfig();
-    });
-
-    configRejectBtn && configRejectBtn.addEventListener("click", () => {
-      setCookieConsent(false);
-      hideConfig();
-    });
-
-    // Footer "Configurar cookies" link — withdraw/change consent
-    // at any time, as easily as it was given.
     document.querySelectorAll(".manage-cookies-link").forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        showConfig();
-      });
+      link.addEventListener("click", (e) => { e.preventDefault(); showConfig(); });
     });
   }
 
-  // --- Release cards: consent-gated click-to-play ---
-  // Third-party embeds (Spotify/YouTube/TikTok) only load once
-  // thirdparty consent has been granted; otherwise clicking shows
-  // an inline consent prompt instead of loading anything.
+  // --- Release cards: consent-gated click-to-play + SYNOPSIS REVEAL ---
   document.querySelectorAll(".release-card").forEach((card) => {
     const thumb = card.querySelector(".release-thumb");
     const body = card.querySelector(".release-card-body");
     const template = card.querySelector(".release-embed-tpl");
-    const synopsis = card.querySelector(".release-synopsis");
+    
+    // ✅ FIX: Use the correct class from embeds.php
+    const synopsisWrapper = card.querySelector(".release-synopsis-wrapper"); 
+    
     if (!thumb || !body || !template) return;
 
     function playEmbed() {
       body.innerHTML = template.innerHTML;
       thumb.remove();
-      if (synopsis) synopsis.hidden = false;
+      
+      // ✅ REVEAL SYNOPSIS WHEN PLAYING
+      if (synopsisWrapper) {
+        synopsisWrapper.removeAttribute("hidden");
+        // Optional smooth fade-in
+        synopsisWrapper.style.opacity = "0";
+        synopsisWrapper.style.transition = "opacity 0.5s ease";
+        requestAnimationFrame(() => { synopsisWrapper.style.opacity = "1"; });
+      }
+      
       card.setAttribute("data-playing", "true");
 
       if (card.dataset.type === "tiktok") {
@@ -138,8 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const prompt = document.createElement("div");
       prompt.className = "release-consent-prompt";
-      prompt.innerHTML =
-        'Este contenido carga cookies de terceros. <button type="button">Aceptar y reproducir</button>';
+      prompt.innerHTML = 'Este contenido carga cookies de terceros. <button type="button">Aceptar y reproducir</button>';
       thumb.replaceWith(prompt);
       prompt.querySelector("button").addEventListener("click", () => {
         setCookieConsent(true);
