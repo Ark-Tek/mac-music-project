@@ -28,15 +28,21 @@
       // No 'type' or 'url' needed — nothing plays here, only the
       // thumbnail + synopsis reveal on click. 'thumbnail' is required
       // since there's no share link to auto-derive one from.
-      // synopsis can be a plain string or the richer
-      // ['title' => ..., 'subtitle' => ..., 'body' => ...] format.
+      //
+      // synopsis follows the same structured format used on
+      // Lanzamientos: title / subtitle / body (body accepts HTML —
+      // <br>, <strong>, <em> — for formatted paragraphs).
       // ---------------------------------------------------------------
       $upcoming = [
         [
           'title'     => 'Próximo lanzamiento (placeholder)',
           'desc'      => 'Fecha por confirmar',
           'thumbnail' => 'assets/logo.jpg',
-          'synopsis'  => 'Sustituye este texto por la sinopsis real de este próximo lanzamiento.',
+          'synopsis'  => [
+            'title'    => 'TÍTULO DEL LANZAMIENTO',
+            'subtitle' => 'Sustituye por una frase corta que describa la pista o el proyecto.',
+            'body'     => 'Sustituye este párrafo por la sinopsis real: de qué trata la canción, qué la inspiró, o cualquier detalle que quieras adelantar antes de su publicación.<br><br>Puedes usar <strong>negrita</strong> o <em>cursiva</em> para dar énfasis, igual que en las fichas de Lanzamientos.',
+          ],
         ],
       ];
       ?>
