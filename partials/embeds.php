@@ -126,7 +126,7 @@ function render_release(array $item): string {
 
     // ✅ Inject the formatted synopsis HTML
     if ($synopsis_html !== '') {
-        $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
+        $html .= '<div class="release-synopsis-wrapper">' . $synopsis_html . '</div>';
     }
 
     $html .= '<template class="release-embed-tpl">' . $embed . '</template>';
