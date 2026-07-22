@@ -37,12 +37,16 @@
         ],
         [
           'type'      => 'spotify',
-          'title'     => 'Soledad',
+          'title'     => 'Reza',
           'desc'      => 'Sencillo — 2026',
           'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
-          'thumbnail' => 'assets/portada_soledad.png',
-          'synopsis'  => 'Escrito y producido en 2026.',
-        ],
+          'thumbnail' => 'assets/portada_reza.png',
+          'synopsis' => [
+    'title'    => 'LA PICARONA',
+    'subtitle' => 'Una explosiva adaptación en salsa de la legendaria "La Fuente de Cacho"',
+    'body'     => 'Desde el corazón de Santander (Cantabria, España) nace la inspiración de La Picarona. Una obra que conserva el alma de la tradición, pero la envuelve en un ritmo ardiente, sensual y contagioso, capaz de conquistar cualquier pista de baile del mundo.<br><br>Entre miradas que encienden la noche, sonrisas provocadoras y secretos que solo la madrugada conoce, la historia juega con el deseo, la seducción y la picardía. La protagonista despierta la imaginación de todos a su paso, mientras una pregunta resuena entre los acordes salseros: ¿quién será la picarona que entretiene a ese hombre hasta las dos de la mañana?<br><br>Con elegancia, doble sentido y un inconfundible sabor latino, La Picarona transforma una melodía que ha acompañado durante generaciones al pueblo cántabro en un himno moderno al baile, la pasión y la alegría de vivir.<br><br><strong>Esta versión nace con un propósito claro: llevar el nombre de Santander, de Cantabria y de la histórica Fuente de Cacho mucho más allá de sus fronteras. Porque las grandes canciones no entienden de fronteras: se sienten, se cantan... y, sobre todo, se bailan.</strong>',
+    ],
+          ],
         [
           'type'      => 'tiktok',
           'title'     => 'Clip (placeholder)',
