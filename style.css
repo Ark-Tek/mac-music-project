@@ -847,3 +847,28 @@ a { color: inherit; text-decoration: none; }
     flex: 1;
   }
 }
+
+.synopsis-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+
+.synopsis-subtitle {
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.synopsis-body {
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.synopsis-body strong {
+  color: #fff;
+  font-weight: 600;
+}
