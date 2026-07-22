@@ -1,3 +1,4 @@
+<?php require 'partials/embeds.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,18 +20,31 @@
     <section class="page-body">
       <p class="eyebrow">Próximos</p>
       <h1>Futuros Lanzamientos</h1>
-      <p class="lede">El calendario de lo que viene: pistas ya terminadas o en fase final, a la espera de fecha de salida.</p>
+      <p class="lede">Lo que viene: haz clic en la portada para ver de qué trata cada lanzamiento antes de su publicación. Aquí no se reproduce nada — solo información.</p>
 
-      <div class="release-row">
-        <span class="code">—</span>
-        <span class="title">Próximo lanzamiento por anunciar</span>
-        <span class="date">Fecha por confirmar</span>
-      </div>
+      <?php
+      // ---------------------------------------------------------------
+      // To add or update an upcoming release, edit this list.
+      // No 'type' or 'url' needed — nothing plays here, only the
+      // thumbnail + synopsis reveal on click. 'thumbnail' is required
+      // since there's no share link to auto-derive one from.
+      // synopsis can be a plain string or the richer
+      // ['title' => ..., 'subtitle' => ..., 'body' => ...] format.
+      // ---------------------------------------------------------------
+      $upcoming = [
+        [
+          'title'     => 'Próximo lanzamiento (placeholder)',
+          'desc'      => 'Fecha por confirmar',
+          'thumbnail' => 'assets/logo.jpg',
+          'synopsis'  => 'Sustituye este texto por la sinopsis real de este próximo lanzamiento.',
+        ],
+      ];
+      ?>
 
-      <div class="empty-state" style="margin-top:32px;">
-        <svg class="ring-mini" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17"></circle></svg>
-        <h2>El calendario se irá llenando aquí</h2>
-        <p>En cuanto se confirme una fecha de lanzamiento, aparecerá en esta lista con su detalle.</p>
+      <div class="release-grid">
+        <?php foreach ($upcoming as $item): ?>
+          <?php echo render_upcoming($item); ?>
+        <?php endforeach; ?>
       </div>
     </section>
 
