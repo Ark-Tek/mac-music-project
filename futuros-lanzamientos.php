@@ -37,7 +37,7 @@
         [
           'title'     => 'Próximo Lanzamiento - Olas Negras',
           'desc'      => '11/09/2026',
-          'thumbnail' => 'assets/logo.jpg',
+          'thumbnail' => 'assets/portada_olas_negras.png',
           'synopsis'  => [
             'title'    => 'OLAS NEGRAS',
             'subtitle' => '',
