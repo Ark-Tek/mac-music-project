@@ -1,95 +1,69 @@
-<?php require 'partials/embeds.php'; ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lanzamientos — Mac Music Project</title>
-<?php include 'partials/head-assets.php'; ?>
-</head>
-<body data-page="lanzamientos">
-<?php include 'partials/cookie-banner.php'; ?>
-<div class="layout">
+function render_release(array $item): string {
+    $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
+    $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
+    $type      = $item['type'] ?? '';
+    $url       = $item['url'] ?? '';
+    $thumbnail = htmlspecialchars(default_thumbnail($item), ENT_QUOTES);
 
-<?php include 'partials/brand-panel.php'; ?>
+    // ✅ NEW: Handle structured synopsis (Array) vs old string
+    $synopsis_html = '';
+    if (isset($item['synopsis']) && is_array($item['synopsis'])) {
+        $s_title    = htmlspecialchars($item['synopsis']['title'] ?? '');
+        $s_subtitle = htmlspecialchars($item['synopsis']['subtitle'] ?? '');
+        $s_body     = $item['synopsis']['body'] ?? ''; // Body contains intentional HTML
+        
+        $synopsis_html .= '<div class="release-synopsis-structured">';
+        if ($s_title !== '')    $synopsis_html .= '<h3 class="synopsis-title">' . $s_title . '</h3>';
+        if ($s_subtitle !== '') $synopsis_html .= '<p class="synopsis-subtitle">' . $s_subtitle . '</p>';
+        if ($s_body !== '')     $synopsis_html .= '<div class="synopsis-body">' . $s_body . '</div>';
+        $synopsis_html .= '</div>';
+    } elseif (isset($item['synopsis']) && is_string($item['synopsis'])) {
+        // Fallback for simple string synopses
+        $synopsis_html = '<p class="release-synopsis">' . htmlspecialchars($item['synopsis']) . '</p>';
+    }
 
-  <main class="content-panel">
+    switch ($type) {
+        case 'spotify':
+            $embed = spotify_embed_iframe($url);
+            $badge = 'Spotify';
+            break;
+        case 'youtube':
+            $embed = youtube_embed_iframe($url);
+            $badge = 'YouTube';
+            break;
+        case 'tiktok':
+            $embed = tiktok_embed_blockquote($url);
+            $badge = 'TikTok';
+            break;
+        default:
+            return '';
+    }
 
-<?php include 'partials/subnav.php'; ?>
+    $html  = '<div class="release-card" data-type="' . htmlspecialchars($type, ENT_QUOTES) . '">';
 
-    <section class="page-body">
-      <p class="eyebrow">Catálogo</p>
-      <h1>Lanzamientos</h1>
-      <p class="lede">El catálogo de música ya publicada por Mac Music Project. Haz clic en la portada para escuchar o ver cada lanzamiento.</p>
+    $html .= '<button class="release-thumb" type="button" aria-label="Reproducir ' . $title . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
+    $html .= '<span class="release-thumb-play" aria-hidden="true">&#9658;</span>';
+    $html .= '</button>';
 
-      <?php
-      // ✅ SAFE DECLARATION: Only defines the function if it doesn't exist yet
-      if (!function_exists('render_release')) {
-        function render_release($release) {
-          $synopsis_title = '';
-          $synopsis_subtitle = '';
-          $synopsis_body = '';
+    $html .= '<div class="release-card-head">';
+    $html .= '<span class="release-badge">' . $badge . '</span>';
+    $html .= '<span class="release-card-title">' . $title . '</span>';
+    if ($desc !== '') {
+        $html .= '<span class="release-card-desc">' . $desc . '</span>';
+    }
+    $html .= '</div>';
 
-          // Handle structured synopsis (Array)
-          if (isset($release['synopsis']) && is_array($release['synopsis'])) {
-            $synopsis_title    = '<h3 class="synopsis-title">' . htmlspecialchars($release['synopsis']['title']) . '</h3>';
-            $synopsis_subtitle = '<p class="synopsis-subtitle">' . htmlspecialchars($release['synopsis']['subtitle']) . '</p>';
-            $synopsis_body     = '<div class="synopsis-body">' . $release['synopsis']['body'] . '</div>';
-          } 
-          // Handle simple synopsis (String)
-          elseif (isset($release['synopsis']) && is_string($release['synopsis'])) {
-            $synopsis_body = '<div class="synopsis-body">' . htmlspecialchars($release['synopsis']) . '</div>';
-          }
+    $html .= '<div class="release-card-body"></div>';
 
-          return '
-            <article class="release-card">
-              <a href="' . htmlspecialchars($release['url']) . '" target="_blank" rel="noopener">
-                <img src="' . htmlspecialchars($release['thumbnail']) . '" alt="' . htmlspecialchars($release['title']) . '">
-              </a>
-              <h2>' . htmlspecialchars($release['title']) . '</h2>
-              <p class="desc">' . htmlspecialchars($release['desc']) . '</p>
-              <div class="synopsis-container">
-                ' . $synopsis_title . '
-                ' . $synopsis_subtitle . '
-                ' . $synopsis_body . '
-              </div>
-            </article>
-          ';
-        }
-      }
+    // ✅ Inject the formatted synopsis HTML
+    if ($synopsis_html !== '') {
+        $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
+    }
 
-      $releases = [
-        [
-          'type'      => 'spotify',
-          'title'     => 'Reza',
-          'desc'      => 'Sencillo — 2026',
-          'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
-          'thumbnail' => 'assets/portada_reza.png',
-          'synopsis'  => [
-            'title'    => 'REZA',
-            'subtitle' => 'No pide ser creída. Impone su existencia.',
-            'body'     => 'Nace desde un territorio de presión insoportable...<br><br><strong>"REZA" pertenece al EP titulado "OLAS NEGRAS".</strong>',
-          ],
-        ],
-        // ... rest of your releases
-      ];
-      ?>
+    $html .= '<template class="release-embed-tpl">' . $embed . '</template>';
 
-      <!-- DEBUG: Remove this line once it works -->
-      <?php if(empty($releases)) echo '<p style="color:red">ERROR: Releases array is empty!</p>'; ?>
+    $html .= '</div>';
 
-      <div class="release-grid">
-        <?php foreach ($releases as $release): ?>
-          <?php echo render_release($release); ?>
-        <?php endforeach; ?>
-      </div>
-    </section>
-
-<?php include 'partials/footer.php'; ?>
-  </main>
-
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+    return $html;
+}
