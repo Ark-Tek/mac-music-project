@@ -74,27 +74,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Release cards: consent-gated click-to-play + SYNOPSIS REVEAL ---
   document.querySelectorAll(".release-card").forEach((card) => {
     const thumb = card.querySelector(".release-thumb");
+    const synopsisWrapper = card.querySelector(".release-synopsis-wrapper");
+    if (!thumb) return;
+
+    function revealSynopsis() {
+      if (!synopsisWrapper) return;
+      synopsisWrapper.removeAttribute("hidden");
+      synopsisWrapper.style.opacity = "0";
+      synopsisWrapper.style.transition = "opacity 0.5s ease";
+      requestAnimationFrame(() => { synopsisWrapper.style.opacity = "1"; });
+    }
+
+    // "Próximamente" cards (Futuros Lanzamientos): no third-party
+    // content, no cookies involved — just reveal the synopsis text.
+    if (card.dataset.type === "upcoming") {
+      thumb.addEventListener("click", () => {
+        revealSynopsis();
+        card.setAttribute("data-playing", "true");
+      }, { once: true });
+      return;
+    }
+
+    // Everything else (Lanzamientos): consent-gated embed playback.
     const body = card.querySelector(".release-card-body");
     const template = card.querySelector(".release-embed-tpl");
-    
-    // ✅ FIX: Use the correct class from embeds.php
-    const synopsisWrapper = card.querySelector(".release-synopsis-wrapper"); 
-    
-    if (!thumb || !body || !template) return;
+    if (!body || !template) return;
 
     function playEmbed() {
       body.innerHTML = template.innerHTML;
       thumb.remove();
-      
-      // ✅ REVEAL SYNOPSIS WHEN PLAYING
-      if (synopsisWrapper) {
-        synopsisWrapper.removeAttribute("hidden");
-        // Optional smooth fade-in
-        synopsisWrapper.style.opacity = "0";
-        synopsisWrapper.style.transition = "opacity 0.5s ease";
-        requestAnimationFrame(() => { synopsisWrapper.style.opacity = "1"; });
-      }
-      
+      revealSynopsis();
       card.setAttribute("data-playing", "true");
 
       if (card.dataset.type === "tiktok") {
