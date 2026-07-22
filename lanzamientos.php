@@ -1,12 +1,4 @@
-<?php 
-// 1. Load embed functions (MUST be first)
-require 'partials/embeds.php'; 
-
-// 2. Temporary Debug: Check if function loaded
-if (!function_exists('render_release')) {
-    die('CRITICAL ERROR: render_release() not found. Check partials/embeds.php');
-}
-?>
+<?php require 'partials/embeds.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,6 +42,14 @@ if (!function_exists('render_release')) {
           'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
           'thumbnail' => 'assets/portada_soledad.png',
           'synopsis'  => 'Escrito y producido en 2026.',
+        ],
+        [
+          'type'      => 'tiktok',
+          'title'     => 'Clip (placeholder)',
+          'desc'      => 'Extracto corto',
+          'url'       => 'https://www.tiktok.com/@macmusicproject/video/REPLACE_WITH_REAL_VIDEO_ID',
+          'thumbnail' => 'assets/logo.jpg',
+          'synopsis'  => 'Sustituye por la sinopsis real del clip.',
         ],
       ];
       ?>
