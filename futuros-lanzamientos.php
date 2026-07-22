@@ -45,13 +45,13 @@
           ],
         ],
         [
-          'title'     => 'Próximo lanzamiento (placeholder)',
+          'title'     => 'Próximo lanzamiento - Soledad',
           'desc'      => 'Fecha por confirmar',
-          'thumbnail' => 'assets/logo.jpg',
+          'thumbnail' => 'assets/portada_soledad.png',
           'synopsis'  => [
-            'title'    => 'TÍTULO DEL LANZAMIENTO',
-            'subtitle' => 'Sustituye por una frase corta que describa la pista o el proyecto.',
-            'body'     => 'Sustituye este párrafo por la sinopsis real: de qué trata la canción, qué la inspiró, o cualquier detalle que quieras adelantar antes de su publicación.<br><br>Puedes usar <strong>negrita</strong> o <em>cursiva</em> para dar énfasis, igual que en las fichas de Lanzamientos.',
+            'title'    => 'SOLEDAD',
+            'subtitle' => '',
+            'body'     => '“SOLEDAD” es un crudo blues contemporáneo vestido de melancolía y verdad emocional. La canción retrata el diálogo íntimo entre un hombre y la soledad, convertida aquí no en enemiga, sino en refugio y compañera de supervivencia durante las noches más oscuras.<br><br>Entre ladridos lejanos, lluvia golpeando la ventana y silencios cargados de dolor, la obra explora el desgaste emocional, el insomnio y la lucha por no perder la identidad en medio del sufrimiento. La soledad aparece como el último abrazo cuando todo lo demás desaparece, mientras el protagonista promete resistir y conservar la esperanza de volver a levantar el vuelo.<br><br>Con una narrativa profundamente humana y una estética inspirada en el blues más desnudo y el alma espiritual del gospel, la canción forma parte de una nueva propuesta artística donde la inteligencia artificial se utiliza únicamente como herramienta de creación sonora al servicio de una visión autoral plenamente humana.<br><br>“Cuando Vivir Se Convierte en una Fatiga” no busca impresionar: busca decir la verdad.',
           ],
         ],
         [
