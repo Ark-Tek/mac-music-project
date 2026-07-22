@@ -612,14 +612,32 @@ a { color: inherit; text-decoration: none; }
 /* ---------- responsive ---------- */
 
 @media (max-width: 900px) {
+  html, body { height: 100%; overflow: hidden; }
+
   .brand-panel {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     inset: auto;
     width: 100%;
-    height: 46vh;
-    min-height: 320px;
+    height: 50vh;
+    min-height: 0;
+    z-index: 100;
   }
-  .content-panel { margin-left: 0; width: 100%; }
+
+  .content-panel {
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 0;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .brand-mark img { width: 42vw; max-width: 200px; }
   .subnav { padding: 20px 20px; }
   .page-body, .tracklist, .hero { padding-left: 20px; padding-right: 20px; }
