@@ -872,3 +872,36 @@ a { color: inherit; text-decoration: none; }
   color: #fff;
   font-weight: 600;
 }
+
+/* Structured synopsis container — matches embeds.php output */
+.release-synopsis-structured {
+  padding: 16px 18px;
+  border-top: 1px dashed var(--line);
+  margin-top: 0;
+}
+
+/* Ensure title/subtitle/body inherit proper spacing inside the container */
+.release-synopsis-structured .synopsis-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--paper);
+  margin: 0 0 0.25rem 0;
+}
+
+.release-synopsis-structured .synopsis-subtitle {
+  font-style: italic;
+  color: var(--paper-dim);
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.release-synopsis-structured .synopsis-body {
+  line-height: 1.65;
+  font-size: 0.875rem;
+  color: var(--paper-dim);
+}
+
+.release-synopsis-structured .synopsis-body strong {
+  color: var(--paper);
+  font-weight: 600;
+}
