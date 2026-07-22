@@ -613,14 +613,22 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 900px) {
   .brand-panel {
-    position: relative;
+    position: sticky;
+    top: 0;
     inset: auto;
     width: 100%;
-    height: 46vh;
-    min-height: 320px;
+    height: auto;
+    min-height: 0;
+    padding: 10px 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
+  .brand-panel::after { display: none; }
+  .brand-ring { display: none; }
+  .brand-caption { display: none; }
+  .brand-mark { gap: 0; }
+  .brand-mark img { width: 40px; max-width: 40px; }
   .content-panel { margin-left: 0; width: 100%; }
-  .brand-mark img { width: 42vw; max-width: 200px; }
   .subnav { padding: 20px 20px; }
   .page-body, .tracklist, .hero { padding-left: 20px; padding-right: 20px; }
   .nav-btn-desc { display: none; }
