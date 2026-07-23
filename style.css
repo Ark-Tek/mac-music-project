@@ -401,9 +401,6 @@ a { color: inherit; text-decoration: none; }
   gap: 24px;
   margin-top: 8px;
 }
-.release-card[data-type="spotify"] {
-  grid-column: 1 / -1;
-}
 
 .release-card {
   border: 1px solid var(--line);
