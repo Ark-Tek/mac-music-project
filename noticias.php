@@ -22,10 +22,34 @@
       <h1>Noticias</h1>
       <p class="lede">Anuncios, actualizaciones del estudio y todo lo que va pasando con el proyecto, según va ocurriendo.</p>
 
-      <div class="empty-state">
-        <svg class="ring-mini" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17"></circle></svg>
-        <h2>Todavía no hay noticias publicadas</h2>
-        <p>En cuanto haya un anuncio, aparecerá aquí primero. Mientras tanto, escríbenos si quieres estar al tanto por correo.</p>
+      <?php
+      // ---------------------------------------------------------------
+      // To add or update a news item, edit this list.
+      // source: outlet/publication name shown as the badge
+      // url: link to the full article (opens in a new tab)
+      // thumbnail: falls back to the logo if not set
+      // synopsis: plain string or the richer title/subtitle/body format
+      // ---------------------------------------------------------------
+      $news = [
+        [
+          'title'     => 'Titular de la noticia (placeholder)',
+          'source'    => 'Nombre del medio',
+          'desc'      => 'Fecha por confirmar',
+          'thumbnail' => 'assets/logo.jpg',
+          'url'       => '#',
+          'synopsis'  => [
+            'title'    => 'RESUMEN DE LA NOTICIA',
+            'subtitle' => 'Sustituye por una frase corta que resuma la cobertura.',
+            'body'     => 'Sustituye este párrafo por un breve extracto o resumen de la noticia real, con un enlace al artículo completo debajo.',
+          ],
+        ],
+      ];
+      ?>
+
+      <div class="release-grid">
+        <?php foreach ($news as $item): ?>
+          <?php echo render_news($item); ?>
+        <?php endforeach; ?>
       </div>
     </section>
 
