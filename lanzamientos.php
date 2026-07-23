@@ -27,7 +27,7 @@
           'type'      => 'spotify',
           'title'     => 'Reza',
           'desc'      => 'Sencillo — 2026',
-          'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
+          'url'       => 'https://open.spotify.com/album/6266XHivLjgrzSxdMjLpUT?si=6hDvcV02Q5WpXKaC5pCXrA&nd=1&dlsi=1ae6308e45024d6f',
           'thumbnail' => 'assets/portada_reza.png',
           'synopsis'  => [
             'title'    => 'REZA',
@@ -39,7 +39,7 @@
           'type'      => 'spotify',
           'title'     => 'La Picarona',
           'desc'      => 'Sencillo — 2026',
-          'url'       => 'https://open.spotify.com/track/REPLACE_WITH_REAL_TRACK_ID',
+          'url'       => 'https://open.spotify.com/album/3HKWi6Kse5Omv5fuSentLF?si=YEwh7idyTLGRrrKaTczcqw&nd=1&dlsi=899277464a7d42a3',
           'thumbnail' => 'assets/portada_la_picarona.png',
           'synopsis' => [
     'title'    => 'LA PICARONA',
