@@ -60,6 +60,7 @@
           'title'     => 'Video musical (placeholder)',
           'desc'      => 'Video oficial',
           'url'       => 'https://www.youtube.com/watch?v=REPLACE_WITH_REAL_VIDEO_ID',
+          'thumbnail' => 'assets/logo.jpg',
           'synopsis'  => 'Sustituye por la sinopsis real del video.',
         ],
       ];
