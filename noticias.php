@@ -35,7 +35,7 @@
           'title'     => 'REZA, la primera canción nacida entre humano e inteligencia artificial, impulsa desde Cantabria una nueva era musical',
           'source'    => 'Cadena SER · Radio Santander',
           'desc'      => '4 junio 2026',
-          'thumbnail' => 'assets/portada_reza.png',
+          'thumbnail' => 'assets/new_thumb_cadena_ser01.jpg',
           'url'       => 'https://cadenaser.com/cantabria/2026/06/04/reza-la-primera-cancion-nacida-entre-humano-e-inteligencia-artificial-impulsa-desde-cantabria-una-nueva-era-musical-radio-santander/',
           'synopsis'  => [
             'title'    => 'REZA EN CADENA SER',
