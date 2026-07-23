@@ -641,21 +641,21 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   html, body { height: 100%; overflow: hidden; }
 
-  .brand-panel {
+.brand-panel {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     inset: auto;
     width: 100%;
-    height: 50vh;
+    height: 50dvh;
     min-height: 0;
     z-index: 100;
   }
 
   .content-panel {
     position: fixed;
-    top: 50vh;
+    top: 50dvh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -663,6 +663,7 @@ a { color: inherit; text-decoration: none; }
     width: 100%;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    padding-bottom: 80px;
   }
 
   .brand-mark img { width: 42vw; max-width: 200px; }
