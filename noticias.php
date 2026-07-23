@@ -43,7 +43,7 @@
             'body'     => 'Pedro Fernández, productor con paso por sellos como BMG y Sony Music, presenta MAC Music Project: una fusión de composición humana e inteligencia artificial que da lugar a "Reza", su primer lanzamiento. La letra es enteramente suya; la IA se usa solo para trasladar esa visión a un sonido que mezcla blues y gospel, géneros poco frecuentes en el mercado español.<br><br>Fernández defiende la tecnología como herramienta, no como sustituto: <strong>"La IA no hace absolutamente nada si no hay un humano detrás"</strong>. El proyecto podría situarse entre los primeros en España en registrar en el Registro de la Propiedad Intelectual una obra creada con apoyo de IA, apoyándose en la autoría humana de todo el proceso.<br><br>"Reza" es el primer adelanto de un EP de cuatro temas con estética visual inspirada en los vinilos clásicos, con lanzamiento completo previsto para septiembre.',
           ],
         ],
-        [
+  /*    [
           'title'     => 'Segundo titular (placeholder)',
           'source'    => 'Nombre del medio 2',
           'desc'      => 'Fecha por confirmar',
@@ -66,7 +66,7 @@
             'subtitle' => 'Sustituye por una frase corta que resuma esta tercera cobertura.',
             'body'     => 'Sustituye este párrafo por el extracto real de la tercera noticia, con su enlace correspondiente.',
           ],
-        ],
+        ],  */
       ];
       ?>
 
