@@ -85,9 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(() => { synopsisWrapper.style.opacity = "1"; });
     }
 
-    // "Próximamente" cards (Futuros Lanzamientos): no third-party
-    // content, no cookies involved — just reveal the synopsis text.
-    if (card.dataset.type === "upcoming") {
+    // "Próximamente" cards (Futuros Lanzamientos) and "news" cards
+    // (Noticias): no third-party content, no cookies involved —
+    // just reveal the synopsis (and, for news, the source link) in place.
+    if (card.dataset.type === "upcoming" || card.dataset.type === "news") {
       thumb.addEventListener("click", () => {
         revealSynopsis();
         card.setAttribute("data-playing", "true");
