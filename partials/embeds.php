@@ -147,7 +147,7 @@ function render_upcoming(array $item): string {
 
     $html .= '<button class="release-thumb" type="button" aria-label="Ver información de ' . $title . '">';
     $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
-    // $html .= '<span class="release-thumb-play release-thumb-info" aria-hidden="true">&#8505;</span>';
+    $html .= '<span class="release-thumb-play release-thumb-info" aria-hidden="true">&#8505;</span>';
     $html .= '</button>';
 
     $html .= '<div class="release-card-head">';
@@ -160,6 +160,45 @@ function render_upcoming(array $item): string {
 
     if ($synopsis_html !== '') {
         $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
+    }
+
+    $html .= '</div>';
+
+    return $html;
+}
+
+function render_news(array $item): string {
+    $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
+    $source    = htmlspecialchars($item['source'] ?? '', ENT_QUOTES);
+    $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
+    $url       = $item['url'] ?? '';
+    $thumbnail = htmlspecialchars(!empty($item['thumbnail']) ? $item['thumbnail'] : 'assets/logo.jpg', ENT_QUOTES);
+    $synopsis_html = build_synopsis_html($item['synopsis'] ?? '');
+
+    $html  = '<div class="release-card" data-type="news">';
+
+    $html .= '<button class="release-thumb" type="button" aria-label="Ver noticia: ' . $title . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
+    $html .= '<span class="release-thumb-play" aria-hidden="true">&#8505;</span>';
+    $html .= '</button>';
+
+    $html .= '<div class="release-card-head">';
+    $html .= '<span class="release-badge release-badge--news">' . ($source !== '' ? $source : 'Prensa') . '</span>';
+    $html .= '<span class="release-card-title">' . $title . '</span>';
+    if ($desc !== '') {
+        $html .= '<span class="release-card-desc">' . $desc . '</span>';
+    }
+    $html .= '</div>';
+
+    if ($synopsis_html !== '' || $url !== '') {
+        $html .= '<div class="release-synopsis-wrapper" hidden>';
+        $html .= $synopsis_html;
+        if ($url !== '') {
+            $safeUrl = htmlspecialchars($url, ENT_QUOTES);
+            $html .= '<a class="release-source-link" href="' . $safeUrl . '" target="_blank" rel="noopener noreferrer">'
+                   . 'Leer artículo completo <span class="arrow">&#8594;</span></a>';
+        }
+        $html .= '</div>';
     }
 
     $html .= '</div>';
