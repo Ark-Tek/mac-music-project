@@ -63,7 +63,7 @@
           'thumbnail' => 'assets/portada_soledad.png',
           'video'     => 'assets/Preview1.mp4',
           'synopsis'  => [
-            'title'    => 'ADELANTO EN VÍDEO',
+            'title'    => 'ADELANTO 1 - SOLEDAD',
             'subtitle' => 'Sustituye por una frase corta que describa este adelanto.',
             'body'     => 'Sustituye este párrafo por la sinopsis real del vídeo. Sube tu archivo .mp4 a la carpeta assets/ y actualiza la ruta en el campo \'video\' de este elemento.',
           ],
@@ -74,7 +74,7 @@
           'thumbnail' => 'assets/portada_soledad.png',
           'video'     => 'assets/Preview2.mp4',
           'synopsis'  => [
-            'title'    => 'ADELANTO EN VÍDEO 2',
+            'title'    => 'ADELANTO 2 - SOLEDAD',
             'subtitle' => 'Sustituye por una frase corta que describa este segundo adelanto.',
             'body'     => 'Sustituye este párrafo por la sinopsis real de este segundo vídeo.',
           ],
