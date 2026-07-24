@@ -46,7 +46,7 @@
         ],
         [
           'title'     => 'Próximo lanzamiento - Soledad',
-          'desc'      => 'Fecha por confirmar',
+          'desc'      => '14/08/2026',
           'thumbnail' => 'assets/portada_soledad.png',
           'synopsis'  => [
             'title'    => 'SOLEDAD',
