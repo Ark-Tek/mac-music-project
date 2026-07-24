@@ -52,9 +52,9 @@
           'title'     => 'Adelanto en vídeo 1 (placeholder)',
           'desc'      => 'Fecha por confirmar',
           'thumbnail' => 'assets/logo.jpg',
-          'video'     => 'assets/REPLACE_WITH_REAL_VIDEO_1.mp4',
+          'video'     => 'assets/Preview1.mp4',
           'synopsis'  => [
-            'title'    => 'ADELANTO EN VÍDEO',
+            'title'    => 'ADELANTO EN VÍDEO 1',
             'subtitle' => 'Sustituye por una frase corta que describa este adelanto.',
             'body'     => 'Sustituye este párrafo por la sinopsis real del vídeo. Sube tu archivo .mp4 a la carpeta assets/ y actualiza la ruta en el campo \'video\' de este elemento.',
           ],
@@ -63,7 +63,7 @@
           'title'     => 'Adelanto en vídeo 2 (placeholder)',
           'desc'      => 'Fecha por confirmar',
           'thumbnail' => 'assets/logo.jpg',
-          'video'     => 'assets/REPLACE_WITH_REAL_VIDEO_2.mp4',
+          'video'     => 'assets/Preview2.mp4',
           'synopsis'  => [
             'title'    => 'ADELANTO EN VÍDEO 2',
             'subtitle' => 'Sustituye por una frase corta que describa este segundo adelanto.',
