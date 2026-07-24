@@ -66,6 +66,28 @@ function default_thumbnail(array $item): string {
     return 'assets/logo.jpg';
 }
 
+/**
+ * Escapes a title for safe HTML display, but allows <br> tags through
+ * (in any of the common forms: <br>, <br/>, <br />) so titles can span
+ * two lines. Everything else in the string is escaped normally, so
+ * quotes/other tags in a title can't break the markup or attributes.
+ */
+function safe_title_html(string $title): string {
+    $escaped = htmlspecialchars($title, ENT_QUOTES);
+    // htmlspecialchars turns "<br>" into "&lt;br&gt;" — turn just that back.
+    return preg_replace('/&lt;br\s*\/?&gt;/i', '<br>', $escaped);
+}
+
+/**
+ * Flattens a title with <br> tags into a single plain-text line, for use
+ * inside HTML attributes (aria-label, alt) where a line break doesn't
+ * make sense and raw HTML can't safely appear anyway.
+ */
+function safe_title_attr(string $title): string {
+    $flat = preg_replace('/<br\s*\/?>/i', ' ', $title);
+    return htmlspecialchars($flat, ENT_QUOTES);
+}
+
 function build_synopsis_html($synopsis): string {
     $synopsis_html = '';
     if (is_array($synopsis)) {
@@ -85,7 +107,9 @@ function build_synopsis_html($synopsis): string {
 }
 
 function render_release(array $item): string {
-    $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
+    $rawTitle  = $item['title'] ?? '';
+    $titleHtml = safe_title_html($rawTitle);
+    $titleAttr = safe_title_attr($rawTitle);
     $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
     $type      = $item['type'] ?? '';
     $url       = $item['url'] ?? '';
@@ -111,14 +135,14 @@ function render_release(array $item): string {
 
     $html  = '<div class="release-card" data-type="' . htmlspecialchars($type, ENT_QUOTES) . '">';
 
-    $html .= '<button class="release-thumb" type="button" aria-label="Reproducir ' . $title . '">';
-    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
+    $html .= '<button class="release-thumb" type="button" aria-label="Reproducir ' . $titleAttr . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $titleAttr . '" loading="lazy">';
     $html .= '<span class="release-thumb-play" aria-hidden="true">&#9658;</span>';
     $html .= '</button>';
 
     $html .= '<div class="release-card-head">';
     $html .= '<span class="release-badge">' . $badge . '</span>';
-    $html .= '<span class="release-card-title">' . $title . '</span>';
+    $html .= '<span class="release-card-title">' . $titleHtml . '</span>';
     if ($desc !== '') {
         $html .= '<span class="release-card-desc">' . $desc . '</span>';
     }
@@ -138,21 +162,23 @@ function render_release(array $item): string {
 }
 
 function render_upcoming(array $item): string {
-    $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
+    $rawTitle  = $item['title'] ?? '';
+    $titleHtml = safe_title_html($rawTitle);
+    $titleAttr = safe_title_attr($rawTitle);
     $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
     $thumbnail = htmlspecialchars(!empty($item['thumbnail']) ? $item['thumbnail'] : 'assets/logo.jpg', ENT_QUOTES);
     $synopsis_html = build_synopsis_html($item['synopsis'] ?? '');
 
     $html  = '<div class="release-card" data-type="upcoming">';
 
-    $html .= '<button class="release-thumb" type="button" aria-label="Ver información de ' . $title . '">';
-    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
+    $html .= '<button class="release-thumb" type="button" aria-label="Ver información de ' . $titleAttr . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $titleAttr . '" loading="lazy">';
     $html .= '<span class="release-thumb-play release-thumb-info" aria-hidden="true">&#8505;</span>';
     $html .= '</button>';
 
     $html .= '<div class="release-card-head">';
     $html .= '<span class="release-badge release-badge--upcoming">Próximamente</span>';
-    $html .= '<span class="release-card-title">' . $title . '</span>';
+    $html .= '<span class="release-card-title">' . $titleHtml . '</span>';
     if ($desc !== '') {
         $html .= '<span class="release-card-desc">' . $desc . '</span>';
     }
@@ -168,7 +194,9 @@ function render_upcoming(array $item): string {
 }
 
 function render_news(array $item): string {
-    $title     = htmlspecialchars($item['title'] ?? '', ENT_QUOTES);
+    $rawTitle  = $item['title'] ?? '';
+    $titleHtml = safe_title_html($rawTitle);
+    $titleAttr = safe_title_attr($rawTitle);
     $source    = htmlspecialchars($item['source'] ?? '', ENT_QUOTES);
     $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
     $url       = $item['url'] ?? '';
@@ -177,14 +205,14 @@ function render_news(array $item): string {
 
     $html  = '<div class="release-card" data-type="news">';
 
-    $html .= '<button class="release-thumb" type="button" aria-label="Ver noticia: ' . $title . '">';
-    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $title . '" loading="lazy">';
+    $html .= '<button class="release-thumb" type="button" aria-label="Ver noticia: ' . $titleAttr . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $titleAttr . '" loading="lazy">';
     $html .= '<span class="release-thumb-play" aria-hidden="true">&#8505;</span>';
     $html .= '</button>';
 
     $html .= '<div class="release-card-head">';
     $html .= '<span class="release-badge release-badge--news">' . ($source !== '' ? $source : 'Prensa') . '</span>';
-    $html .= '<span class="release-card-title">' . $title . '</span>';
+    $html .= '<span class="release-card-title">' . $titleHtml . '</span>';
     if ($desc !== '') {
         $html .= '<span class="release-card-desc">' . $desc . '</span>';
     }
