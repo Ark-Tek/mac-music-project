@@ -58,7 +58,7 @@
           ],
         ],
         [
-          'title'     => 'Adelanto en vídeo 1',
+          'title'     => 'Adelanto 1 Soledad',
           'desc'      => 'Fecha por confirmar',
           'thumbnail' => 'assets/portada_soledad.png',
           'video'     => 'assets/Preview1.mp4',
@@ -69,7 +69,7 @@
           ],
         ],
         [
-          'title'     => 'Adelanto en vídeo 2',
+          'title'     => 'Adelanto 2 Soledad',
           'desc'      => 'Fecha por confirmar',
           'thumbnail' => 'assets/portada_soledad.png',
           'video'     => 'assets/Preview2.mp4',
