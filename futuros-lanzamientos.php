@@ -54,6 +54,29 @@
             'body'     => '“SOLEDAD” es un crudo blues contemporáneo vestido de melancolía y verdad emocional. La canción retrata el diálogo íntimo entre un hombre y la soledad, convertida aquí no en enemiga, sino en refugio y compañera de supervivencia durante las noches más oscuras.<br><br>Entre ladridos lejanos, lluvia golpeando la ventana y silencios cargados de dolor, la obra explora el desgaste emocional, el insomnio y la lucha por no perder la identidad en medio del sufrimiento. La soledad aparece como el último abrazo cuando todo lo demás desaparece, mientras el protagonista promete resistir y conservar la esperanza de volver a levantar el vuelo.<br><br>Con una narrativa profundamente humana y una estética inspirada en el blues más desnudo y el alma espiritual del gospel, la canción forma parte de una nueva propuesta artística donde la inteligencia artificial se utiliza únicamente como herramienta de creación sonora al servicio de una visión autoral plenamente humana.<br><br>“Cuando Vivir Se Convierte en una Fatiga” no busca impresionar: busca decir la verdad.',
           ],
         ],
+        [
+          'title'     => 'Adelanto en vídeo 1',
+          'desc'      => 'Fecha por confirmar',
+          'thumbnail' => 'assets/portada_soledad.png',
+          'video'     => 'assets/Preview1.mp4',
+          'synopsis'  => [
+            'title'    => 'ADELANTO EN VÍDEO',
+            'subtitle' => 'Sustituye por una frase corta que describa este adelanto.',
+            'body'     => 'Sustituye este párrafo por la sinopsis real del vídeo. Sube tu archivo .mp4 a la carpeta assets/ y actualiza la ruta en el campo \'video\' de este elemento.',
+          ],
+        ],
+        [
+          'title'     => 'Adelanto en vídeo 2',
+          'desc'      => 'Fecha por confirmar',
+          'thumbnail' => 'assets/portada_soledad.png',
+          'video'     => 'assets/Preview2.mp4',
+          'synopsis'  => [
+            'title'    => 'ADELANTO EN VÍDEO 2',
+            'subtitle' => 'Sustituye por una frase corta que describa este segundo adelanto.',
+            'body'     => 'Sustituye este párrafo por la sinopsis real de este segundo vídeo.',
+          ],
+        ],
+        
  /*     [
           'title'     => 'Próximo lanzamiento (placeholder)',
           'desc'      => 'Fecha por confirmar',
