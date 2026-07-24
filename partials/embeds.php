@@ -193,6 +193,53 @@ function render_upcoming(array $item): string {
     return $html;
 }
 
+/**
+ * Same "Próximamente" card, but plays a self-hosted video on click
+ * instead of just revealing text. No third-party service involved,
+ * so no cookie-consent gating is needed — it plays immediately.
+ */
+function render_upcoming_video(array $item): string {
+    $rawTitle  = $item['title'] ?? '';
+    $titleHtml = safe_title_html($rawTitle);
+    $titleAttr = safe_title_attr($rawTitle);
+    $desc      = htmlspecialchars($item['desc'] ?? '', ENT_QUOTES);
+    $thumbnail = htmlspecialchars(!empty($item['thumbnail']) ? $item['thumbnail'] : 'assets/logo.jpg', ENT_QUOTES);
+    $videoSrc  = htmlspecialchars($item['video'] ?? '', ENT_QUOTES);
+    $synopsis_html = build_synopsis_html($item['synopsis'] ?? '');
+
+    $html  = '<div class="release-card" data-type="video">';
+
+    $html .= '<button class="release-thumb" type="button" aria-label="Reproducir vídeo: ' . $titleAttr . '">';
+    $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $titleAttr . '" loading="lazy">';
+    $html .= '<span class="release-thumb-play" aria-hidden="true">&#9658;</span>';
+    $html .= '</button>';
+
+    $html .= '<div class="release-card-head">';
+    $html .= '<span class="release-badge release-badge--upcoming">Próximamente</span>';
+    $html .= '<span class="release-card-title">' . $titleHtml . '</span>';
+    if ($desc !== '') {
+        $html .= '<span class="release-card-desc">' . $desc . '</span>';
+    }
+    $html .= '</div>';
+
+    $html .= '<div class="release-card-body"></div>';
+
+    if ($synopsis_html !== '') {
+        $html .= '<div class="release-synopsis-wrapper" hidden>' . $synopsis_html . '</div>';
+    }
+
+    $html .= '<template class="release-embed-tpl">'
+           . '<video class="release-embed release-embed--video" controls playsinline preload="metadata">'
+           . '<source src="' . $videoSrc . '" type="video/mp4">'
+           . 'Tu navegador no soporta la reproducción de vídeo.'
+           . '</video>'
+           . '</template>';
+
+    $html .= '</div>';
+
+    return $html;
+}
+
 function render_news(array $item): string {
     $rawTitle  = $item['title'] ?? '';
     $titleHtml = safe_title_html($rawTitle);
