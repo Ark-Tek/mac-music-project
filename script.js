@@ -96,6 +96,30 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    // Self-hosted video cards: no third party involved, so it just
+    // plays immediately on click — no consent prompt needed.
+    if (card.dataset.type === "video") {
+      const videoBody = card.querySelector(".release-card-body");
+      const videoTemplate = card.querySelector(".release-embed-tpl");
+      if (!videoBody || !videoTemplate) return;
+
+      thumb.addEventListener("click", () => {
+        videoBody.innerHTML = videoTemplate.innerHTML;
+        thumb.remove();
+        revealSynopsis();
+        card.setAttribute("data-playing", "true");
+
+        const videoEl = videoBody.querySelector("video");
+        if (videoEl) videoEl.play().catch(() => {
+          /* Autoplay can still be blocked by the browser even on a
+             direct click if e.g. the tab was backgrounded — the
+             visible native controls let the visitor just hit play
+             manually in that rare case. */
+        });
+      }, { once: true });
+      return;
+    }
+
     // Everything else (Lanzamientos): consent-gated embed playback.
     const body = card.querySelector(".release-card-body");
     const template = card.querySelector(".release-embed-tpl");
