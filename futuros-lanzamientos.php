@@ -45,7 +45,7 @@
           ],
         ],
         [
-          'title'     => 'Próximo lanzamiento - Soledad',
+          'title'     => 'Próximo lanzamiento - Soledad<br>Incluido en el EP "OLas Negras"',
           'desc'      => '14/08/2026',
           'thumbnail' => 'assets/portada_soledad.png',
           'synopsis'  => [
