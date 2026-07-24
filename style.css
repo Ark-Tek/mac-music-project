@@ -535,6 +535,11 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
 }
 
+.release-embed--video {
+  height: auto;
+  background: #000;
+}
+
 .release-embed-wrap {
   position: relative;
   width: 100%;
@@ -641,19 +646,19 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   html, body { height: 100%; overflow: hidden; }
 
-.brand-panel {
+  .brand-panel {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     inset: auto;
     width: 100%;
-    height: 50dvh;
+    height: 50vh;
     min-height: 0;
     z-index: 100;
   }
 
-.content-panel {
+  .content-panel {
     position: fixed;
     top: 50vh;
     left: 0;
@@ -661,7 +666,6 @@ a { color: inherit; text-decoration: none; }
     bottom: 0;
     margin-left: 0;
     width: 100%;
-    min-height: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
