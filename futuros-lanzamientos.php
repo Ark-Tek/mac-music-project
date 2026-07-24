@@ -20,7 +20,7 @@
     <section class="page-body">
       <p class="eyebrow">Próximos</p>
       <h1>Futuros Lanzamientos</h1>
-      <p class="lede">Lo que viene: haz clic en la portada para ver de qué trata cada lanzamiento antes de su publicación. Aquí no se reproduce nada — solo información.</p>
+      <p class="lede">Lo que viene: haz clic en la portada para ver de qué trata cada lanzamiento antes de su publicación, o reproduce un adelanto en vídeo cuando esté disponible.</p>
 
       <?php
       // ---------------------------------------------------------------
@@ -32,6 +32,9 @@
       // synopsis follows the same structured format used on
       // Lanzamientos: title / subtitle / body (body accepts HTML —
       // <br>, <strong>, <em> — for formatted paragraphs).
+      //
+      // Add a 'video' key with the path to an .mp4 file to make it a
+      // playable video card instead of an info-only card.
       // ---------------------------------------------------------------
       $upcoming = [
         [
@@ -76,23 +79,12 @@
             'body'     => 'Sustituye este párrafo por la sinopsis real de este segundo vídeo.',
           ],
         ],
-        
- /*     [
-          'title'     => 'Próximo lanzamiento (placeholder)',
-          'desc'      => 'Fecha por confirmar',
-          'thumbnail' => 'assets/logo.jpg',
-          'synopsis'  => [
-            'title'    => 'TÍTULO DEL LANZAMIENTO',
-            'subtitle' => 'Sustituye por una frase corta que describa la pista o el proyecto.',
-            'body'     => 'Sustituye este párrafo por la sinopsis real: de qué trata la canción, qué la inspiró, o cualquier detalle que quieras adelantar antes de su publicación.<br><br>Puedes usar <strong>negrita</strong> o <em>cursiva</em> para dar énfasis, igual que en las fichas de Lanzamientos.',
-          ],
-        ], */
       ];
       ?>
 
       <div class="release-grid">
         <?php foreach ($upcoming as $item): ?>
-          <?php echo render_upcoming($item); ?>
+          <?php echo !empty($item['video']) ? render_upcoming_video($item) : render_upcoming($item); ?>
         <?php endforeach; ?>
       </div>
     </section>
