@@ -59,7 +59,7 @@
         ],
         [
           'title'     => 'Adelanto 1 Soledad',
-          'desc'      => 'Fecha por confirmar',
+          'desc'      => '14/08/2026',
           'thumbnail' => 'assets/portada_soledad.png',
           'video'     => 'assets/Preview1.mp4',
           'synopsis'  => [
@@ -70,7 +70,7 @@
         ],
         [
           'title'     => 'Adelanto 2 Soledad',
-          'desc'      => 'Fecha por confirmar',
+          'desc'      => '14/08/2026',
           'thumbnail' => 'assets/portada_soledad.png',
           'video'     => 'assets/Preview2.mp4',
           'synopsis'  => [
