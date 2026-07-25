@@ -79,6 +79,26 @@
             'body'     => '',
           ],
         ],
+        [
+          'title'     => 'El Equilibrio del Alma',
+          'desc'      => 'Fecha no disponible',
+          'thumbnail' => 'assets/portada_equilibio.jpg',
+          'synopsis'  => [
+            'title'    => 'EL EQUILIBRIO DEL ALMA',
+            'subtitle' => '',
+            'body'     => '',
+          ],
+        ],
+        [
+          'title'     => 'Portada',
+          'desc'      => 'Fecha no disponible',
+          'thumbnail' => 'assets/logo.jpg',
+          'synopsis'  => [
+            'title'    => 'Portada',
+            'subtitle' => '',
+            'body'     => '',
+          ],
+        ],
       ];
       ?>
 
