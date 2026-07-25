@@ -960,3 +960,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--paper);
   font-weight: 300;
 }
+body[data-page="politica-cookies"] .cookie-banner {
+  display: none;
+}
