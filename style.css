@@ -668,6 +668,7 @@ a { color: inherit; text-decoration: none; }
     width: 100%;
     min-height: 0;
     overflow-y: auto;
+    padding-bottom: 80px;
     -webkit-overflow-scrolling: touch;
   }
 
