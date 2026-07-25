@@ -911,6 +911,9 @@ a { color: inherit; text-decoration: none; }
     flex-direction: column;
     align-items: stretch;
   }
+  .cookie-banner-text {
+    flex: none;
+  }
   .cookie-banner-actions {
     justify-content: stretch;
   }
