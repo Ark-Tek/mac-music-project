@@ -90,7 +90,7 @@
           ],
         ],
         [
-          'title'     => 'Soledad',
+          'title'     => 'Soledad (Smooth version)',
           'desc'      => '11/09/2026',
           'thumbnail' => 'assets/portada_soledad_smooth.jpg',
           'synopsis'  => [
