@@ -90,11 +90,11 @@
           ],
         ],
         [
-          'title'     => 'Portada',
+          'title'     => 'Soledad',
           'desc'      => 'Fecha no disponible',
-          'thumbnail' => 'assets/logo.jpg',
+          'thumbnail' => 'assets/portada_soledad.jpg',
           'synopsis'  => [
-            'title'    => 'Portada',
+            'title'    => 'SOLEDAD',
             'subtitle' => '',
             'body'     => '',
           ],
