@@ -81,7 +81,7 @@
         ],
         [
           'title'     => 'El Equilibrio del Alma',
-          'desc'      => 'Fecha no disponible',
+          'desc'      => '11/09/2026',
           'thumbnail' => 'assets/portada_equilibio.jpg',
           'synopsis'  => [
             'title'    => 'EL EQUILIBRIO DEL ALMA',
@@ -91,8 +91,8 @@
         ],
         [
           'title'     => 'Soledad',
-          'desc'      => 'Fecha no disponible',
-          'thumbnail' => 'assets/portada_soledad.jpg',
+          'desc'      => '11/09/2026',
+          'thumbnail' => 'assets/portada_soledad_smooth.jpg',
           'synopsis'  => [
             'title'    => 'SOLEDAD',
             'subtitle' => '',
