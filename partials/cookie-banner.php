@@ -2,7 +2,7 @@
     <div class="cookie-banner-inner">
       <p class="cookie-banner-text">
         Usamos cookies técnicas necesarias para el funcionamiento del sitio. Con tu permiso, también cargamos contenido de Spotify, YouTube y TikTok en la página de Lanzamientos, que instalan sus propias cookies al reproducirse. Más información en nuestra
-        <a href="politica-cookies.php">Política de Cookies</a>.
+        <a href="partials\politica-cookies.php">Política de Cookies</a>.
       </p>
       <div class="cookie-banner-actions">
         <button type="button" class="cookie-btn cookie-btn-reject" id="cookie-reject-all">Rechazar todas</button>
