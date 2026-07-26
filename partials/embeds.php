@@ -173,7 +173,7 @@ function render_upcoming(array $item): string {
 
     $html .= '<button class="release-thumb" type="button" aria-label="Ver información de ' . $titleAttr . '">';
     $html .= '<img src="' . $thumbnail . '" alt="Portada de ' . $titleAttr . '" loading="lazy">';
-    $html .= '<span class="release-thumb-play release-thumb-info" aria-hidden="true">&#8505;</span>';
+    //$html .= '<span class="release-thumb-play release-thumb-info" aria-hidden="true">&#8505;</span>';
     $html .= '</button>';
 
     $html .= '<div class="release-card-head">';
