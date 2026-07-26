@@ -86,7 +86,7 @@
           'synopsis'  => [
             'title'    => 'EL EQUILIBRIO DEL ALMA',
             'subtitle' => '',
-            'body'     => '',
+            'body'     => ''body' => 'Entre la melancolía del jazz nocturno y la emoción más desnuda, "EL EQUILIBRIO DEL ALMA" emerge como una composición elegante e intensa que convierte el dolor sentimental en belleza sonora. La canción retrata el instante exacto en el que el amor deja de ser refugio para convertirse en silencio, distancia y heridas invisibles.<br><br>Con una narrativa íntima y profundamente humana, la obra construye un paisaje emocional donde el frío, la lluvia y el mar simbolizan el derrumbe interior de quien aún ama mientras observa cómo todo se desvanece. La interpretación transmite vulnerabilidad, pero también una delicadeza madura que eleva el tema más allá de una simple canción de desamor.<br><br>Musicalmente, "Nunca Pensé" navega por sonoridades smooth jazz y soul contemporáneo, creando una atmósfera envolvente, sensual y reflexiva. La canción encuentra equilibrio entre la suavidad instrumental y una letra cargada de imágenes poéticas, logrando un sonido atemporal y emocionalmente profundo.<br><br>"El equilibrio del alma" no busca impresionar con estridencia; conquista desde la honestidad, la atmósfera y el alma.',
           ],
         ],
         [
@@ -96,7 +96,7 @@
           'synopsis'  => [
             'title'    => 'SOLEDAD',
             'subtitle' => '',
-            'body'     => '',
+            'body'     => ''body' => 'Entre la melancolía del jazz nocturno y la emoción más desnuda, "EL EQUILIBRIO DEL ALMA" emerge como una composición elegante e intensa que convierte el dolor sentimental en belleza sonora. La canción retrata el instante exacto en el que el amor deja de ser refugio para convertirse en silencio, distancia y heridas invisibles.<br><br>Con una narrativa íntima y profundamente humana, la obra construye un paisaje emocional donde el frío, la lluvia y el mar simbolizan el derrumbe interior de quien aún ama mientras observa cómo todo se desvanece. La interpretación transmite vulnerabilidad, pero también una delicadeza madura que eleva el tema más allá de una simple canción de desamor.<br><br>Musicalmente, "Nunca Pensé" navega por sonoridades smooth jazz y soul contemporáneo, creando una atmósfera envolvente, sensual y reflexiva. La canción encuentra equilibrio entre la suavidad instrumental y una letra cargada de imágenes poéticas, logrando un sonido atemporal y emocionalmente profundo.<br><br>"El equilibrio del alma" no busca impresionar con estridencia; conquista desde la honestidad, la atmósfera y el alma.',',
           ],
         ],
       ];
