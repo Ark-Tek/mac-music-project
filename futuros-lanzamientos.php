@@ -47,7 +47,7 @@
             'body'     => '“Olas Negras” es un viaje emocional a través de la fragilidad humana, la resistencia y las cicatrices invisibles que deja la vida cuando golpea con más fuerza. Entre atmósferas oscuras, mares embravecidos, noches de insomnio y silencios que pesan más que las palabras, el EP construye un universo íntimo donde el blues, el gospel, el soul y las texturas del smooth jazz se entrelazan para dar voz a emociones profundas y reales.<br><br>Cada canción representa una marea distinta del alma: la soledad convertida en refugio, el amor roto que aún respira entre las ruinas, la lucha contra quienes intentaron destruir la verdad y la necesidad de mantenerse en pie incluso cuando todo parece derrumbarse. Las letras avanzan como confesiones nocturnas, cargadas de poesía, lluvia, viento, mar y heridas emocionales que nunca terminan de cerrarse.<br><br>La portada del EP resume perfectamente esa identidad: unas olas oscuras golpeando violentamente contra las rocas bajo un cielo amenazante. Una imagen poderosa y cinematográfica que simboliza la lucha constante entre la tempestad exterior y la fortaleza interior. El blanco y negro envejecido aporta una sensación atemporal, casi de viejo vinilo perdido en el tiempo, reforzando el carácter clásico, melancólico y elegante del proyecto.<br><br>“Olas Negras” no busca la perfección artificial ni el ruido vacío. Es música hecha desde la herida, desde la dignidad y desde la necesidad de seguir respirando aun en mitad de la tormenta. Un trabajo profundamente humano donde cada canción funciona como una ola: algunas acarician, otras golpean, pero todas dejan huella.',
           ],
         ],
-        [
+ /*       [
           'title'     => 'Próximo lanzamiento - Soledad<br>Incluido en el EP "OLas Negras"',
           'desc'      => '14/08/2026',
           'thumbnail' => 'assets/portada_soledad.png',
@@ -78,7 +78,7 @@
             'subtitle' => '',
             'body'     => '',
           ],
-        ],
+        ], */
         [
           'title'     => 'El Equilibrio del Alma',
           'desc'      => '11/09/2026',
