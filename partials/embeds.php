@@ -25,7 +25,7 @@ function spotify_embed_iframe(string $shareUrl): string {
 
     return '<iframe class="release-embed release-embed--spotify" '
          . 'src="' . htmlspecialchars($embedUrl, ENT_QUOTES) . '" '
-         . 'width="100%" height="152" frameborder="0" '
+         . 'width="100%" height="160" frameborder="0" scrolling="no" '
          . 'allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" '
          . 'loading="lazy"></iframe>';
 }
