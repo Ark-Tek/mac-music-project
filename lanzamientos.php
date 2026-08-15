@@ -50,7 +50,7 @@
         [
           'type'      => 'spotify',
           'title'     => 'Soledad',
-          'desc'      => 'Incluido en el EP "OLas Negras"',
+          'desc'      => 'Sencillo — 2026 — Incluido en el EP "OLas Negras"',
           'url'       => 'https://open.spotify.com/track/4waxxKjTuUkXVqDLmOGnIq',
           'thumbnail' => 'assets/portada_soledad.png',
           'synopsis'  => [
