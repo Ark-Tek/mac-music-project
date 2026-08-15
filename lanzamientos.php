@@ -47,6 +47,17 @@
     'body'     => 'Desde el corazón de <strong>Santander (Cantabria, España)</strong> nace la inspiración de <em>La Picarona</em>. Una obra que conserva el alma de la tradición, pero la envuelve en un ritmo ardiente, sensual y contagioso, capaz de conquistar cualquier pista de baile del mundo.<br><br>Entre miradas que encienden la noche, sonrisas provocadoras y secretos que solo la madrugada conoce, la historia juega con el deseo, la seducción y la picardía. La protagonista despierta la imaginación de todos a su paso, mientras una pregunta resuena entre los acordes salseros: <strong>¿quién será la picarona que entretiene a ese hombre hasta las dos de la mañana?</strong><br><br>Con elegancia, doble sentido y un inconfundible sabor latino, <em>La Picarona</em> transforma una melodía que ha acompañado durante generaciones al pueblo cántabro en un himno moderno al baile, la pasión y la alegría de vivir.<br><br>Esta versión nace con un propósito claro: llevar el nombre de <strong>Santander</strong>, de <strong>Cantabria</strong> y de la histórica <strong>Fuente de Cacho</strong> mucho más allá de sus fronteras. Porque las grandes canciones no entienden de fronteras: se sienten, se cantan... y, sobre todo, <strong>se bailan</strong>.',
     ],
           ],
+          'type'      => 'spotify',
+          'title'     => 'Soledad',
+          'desc'      => 'Incluido en el EP "OLas Negras"',
+          'url'       => 'https://open.spotify.com/track/4waxxKjTuUkXVqDLmOGnIq',
+          'thumbnail' => 'assets/portada_soledad.png',
+          'synopsis'  => [
+            'title'    => 'SOLEDAD',
+            'subtitle' => '',
+            'body'     => '“SOLEDAD” es un crudo blues contemporáneo vestido de melancolía y verdad emocional. La canción retrata el diálogo íntimo entre un hombre y la soledad, convertida aquí no en enemiga, sino en refugio y compañera de supervivencia durante las noches más oscuras.<br><br>Entre ladridos lejanos, lluvia golpeando la ventana y silencios cargados de dolor, la obra explora el desgaste emocional, el insomnio y la lucha por no perder la identidad en medio del sufrimiento. La soledad aparece como el último abrazo cuando todo lo demás desaparece, mientras el protagonista promete resistir y conservar la esperanza de volver a levantar el vuelo.<br><br>Con una narrativa profundamente humana y una estética inspirada en el blues más desnudo y el alma espiritual del gospel, la canción forma parte de una nueva propuesta artística donde la inteligencia artificial se utiliza únicamente como herramienta de creación sonora al servicio de una visión autoral plenamente humana.<br><br>“Cuando Vivir Se Convierte en una Fatiga” no busca impresionar: busca decir la verdad.',
+          ],
+        ],
    /*   [
           'type'      => 'tiktok',
           'title'     => 'Clip (placeholder)',
