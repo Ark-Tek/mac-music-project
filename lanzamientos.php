@@ -59,6 +59,18 @@
             'body'     => '“SOLEDAD” es un crudo blues contemporáneo vestido de melancolía y verdad emocional. La canción retrata el diálogo íntimo entre un hombre y la soledad, convertida aquí no en enemiga, sino en refugio y compañera de supervivencia durante las noches más oscuras.<br><br>Entre ladridos lejanos, lluvia golpeando la ventana y silencios cargados de dolor, la obra explora el desgaste emocional, el insomnio y la lucha por no perder la identidad en medio del sufrimiento. La soledad aparece como el último abrazo cuando todo lo demás desaparece, mientras el protagonista promete resistir y conservar la esperanza de volver a levantar el vuelo.<br><br>Con una narrativa profundamente humana y una estética inspirada en el blues más desnudo y el alma espiritual del gospel, la canción forma parte de una nueva propuesta artística donde la inteligencia artificial se utiliza únicamente como herramienta de creación sonora al servicio de una visión autoral plenamente humana.<br><br>“Cuando Vivir Se Convierte en una Fatiga” no busca impresionar: busca decir la verdad.',
           ],
         ],
+        [
+          'type'      => 'spotify',
+          'title'     => 'El Equilibrio del Alma',
+          'desc'      => '',
+          'url'       => 'https://open.spotify.com/track/6F30EkKfPljgsuk42y536I',
+          'thumbnail' => 'assets/portada_equilibio.jpg',
+          'synopsis'  => [
+            'title'    => 'EL EQUILIBRIO DEL ALMA',
+            'subtitle' => '',
+            'body'     => 'Entre la melancolía del jazz nocturno y la emoción más desnuda, "EL EQUILIBRIO DEL ALMA" emerge como una composición elegante e intensa que convierte el dolor sentimental en belleza sonora. La canción retrata el instante exacto en el que el amor deja de ser refugio para convertirse en silencio, distancia y heridas invisibles.<br><br>Con una narrativa íntima y profundamente humana, la obra construye un paisaje emocional donde el frío, la lluvia y el mar simbolizan el derrumbe interior de quien aún ama mientras observa cómo todo se desvanece. La interpretación transmite vulnerabilidad, pero también una delicadeza madura que eleva el tema más allá de una simple canción de desamor.<br><br>Musicalmente, "El equilibrio del alma" navega por sonoridades smooth jazz y soul contemporáneo, creando una atmósfera envolvente, sensual y reflexiva. La canción encuentra equilibrio entre la suavidad instrumental y una letra cargada de imágenes poéticas, logrando un sonido atemporal y emocionalmente profundo.<br><br>"El equilibrio del alma" no busca impresionar con estridencia; conquista desde la honestidad, la atmósfera y el alma.',
+          ],
+        ],
    /*   [
           'type'      => 'tiktok',
           'title'     => 'Clip (placeholder)',
