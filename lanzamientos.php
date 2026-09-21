@@ -82,7 +82,7 @@
             'subtitle' => '',
             'body' => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.',          ],
         ],
-      ]
+      ],
    /*   [
           'type'      => 'tiktok',
           'title'     => 'Clip (placeholder)',
