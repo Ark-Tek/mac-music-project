@@ -47,7 +47,10 @@
             'body'     => '“Olas Negras” es un viaje emocional a través de la fragilidad humana, la resistencia y las cicatrices invisibles que deja la vida cuando golpea con más fuerza. Entre atmósferas oscuras, mares embravecidos, noches de insomnio y silencios que pesan más que las palabras, el EP construye un universo íntimo donde el blues, el gospel, el soul y las texturas del smooth jazz se entrelazan para dar voz a emociones profundas y reales.<br><br>Cada canción representa una marea distinta del alma: la soledad convertida en refugio, el amor roto que aún respira entre las ruinas, la lucha contra quienes intentaron destruir la verdad y la necesidad de mantenerse en pie incluso cuando todo parece derrumbarse. Las letras avanzan como confesiones nocturnas, cargadas de poesía, lluvia, viento, mar y heridas emocionales que nunca terminan de cerrarse.<br><br>La portada del EP resume perfectamente esa identidad: unas olas oscuras golpeando violentamente contra las rocas bajo un cielo amenazante. Una imagen poderosa y cinematográfica que simboliza la lucha constante entre la tempestad exterior y la fortaleza interior. El blanco y negro envejecido aporta una sensación atemporal, casi de viejo vinilo perdido en el tiempo, reforzando el carácter clásico, melancólico y elegante del proyecto.<br><br>“Olas Negras” no busca la perfección artificial ni el ruido vacío. Es música hecha desde la herida, desde la dignidad y desde la necesidad de seguir respirando aun en mitad de la tormenta. Un trabajo profundamente humano donde cada canción funciona como una ola: algunas acarician, otras golpean, pero todas dejan huella.',
           ],
         ],
- /*       [
+      ];
+      /* --- Temporarily disabled cards, kept here for reference ---
+      $disabled_upcoming_examples = [
+        [
           'title'     => 'Próximo lanzamiento - Soledad<br>Incluido en el EP "OLas Negras"',
           'desc'      => '14/08/2026',
           'thumbnail' => 'assets/portada_soledad.png',
@@ -78,7 +81,7 @@
             'subtitle' => '',
             'body'     => '',
           ],
-        ], 
+        ],
         [
           'title'     => 'El Equilibrio del Alma',
           'desc'      => '11/09/2026',
@@ -88,7 +91,7 @@
             'subtitle' => '',
             'body'     => 'Entre la melancolía del jazz nocturno y la emoción más desnuda, "EL EQUILIBRIO DEL ALMA" emerge como una composición elegante e intensa que convierte el dolor sentimental en belleza sonora. La canción retrata el instante exacto en el que el amor deja de ser refugio para convertirse en silencio, distancia y heridas invisibles.<br><br>Con una narrativa íntima y profundamente humana, la obra construye un paisaje emocional donde el frío, la lluvia y el mar simbolizan el derrumbe interior de quien aún ama mientras observa cómo todo se desvanece. La interpretación transmite vulnerabilidad, pero también una delicadeza madura que eleva el tema más allá de una simple canción de desamor.<br><br>Musicalmente, "El equilibrio del alma" navega por sonoridades smooth jazz y soul contemporáneo, creando una atmósfera envolvente, sensual y reflexiva. La canción encuentra equilibrio entre la suavidad instrumental y una letra cargada de imágenes poéticas, logrando un sonido atemporal y emocionalmente profundo.<br><br>"El equilibrio del alma" no busca impresionar con estridencia; conquista desde la honestidad, la atmósfera y el alma.',
           ],
-        ], 
+        ],
         [
           'title'     => 'Soledad (Smooth version)',
           'desc'      => '11/09/2026',
@@ -96,9 +99,11 @@
           'synopsis'  => [
             'title'    => 'SOLEDAD',
             'subtitle' => '',
-            'body' => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.',          ],
+            'body'     => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.',
+          ],
         ],
-      ]; */
+      ];
+      --- end disabled cards --- */
       ?>
 
       <div class="release-grid">
