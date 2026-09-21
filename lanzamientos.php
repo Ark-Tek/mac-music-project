@@ -75,7 +75,7 @@
           'type'      => 'spotify',
           'title'     => 'Soledad (Smooth version)',
           'desc'      => '',
-          'url'       => 'https://open.spotify.com/track/13hsglQVzf8EWII2erlLd0'
+          'url'       => 'https://open.spotify.com/track/13hsglQVzf8EWII2erlLd0',
           'thumbnail' => 'assets/portada_soledad_smooth.jpg',
           'synopsis'  => [
             'title'    => 'SOLEDAD',
