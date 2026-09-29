@@ -23,67 +23,7 @@
 
       <?php
       $releases = [
-        [
-          'type'      => 'spotify',
-          'title'     => 'Reza',
-          'desc'      => 'Sencillo — 2026',
-          'url'       => 'https://open.spotify.com/album/6266XHivLjgrzSxdMjLpUT?si=6hDvcV02Q5WpXKaC5pCXrA&nd=1&dlsi=1ae6308e45024d6f',
-          'thumbnail' => 'assets/portada_reza.png',
-          'synopsis'  => [
-            'title'    => 'REZA',
-            'subtitle' => 'No pide ser creída. Impone su existencia.',
-            'body' => 'Nace desde un territorio de presión insoportable, donde la identidad fue puesta a prueba, atacada y empujada al límite del silencio. No habla de un conflicto: lo sobrevive.<br><br>Es un blues roto, sucio, sin redención, atravesado por un gospel que ya no consuela, sino que arde. Una mezcla imposible entre lo espiritual y lo devastado, donde cada nota suena como si fuera la última resistencia antes del colapso.<br><br>Aquí la verdad no es luz ni bandera: es una herida abierta que se niega a cerrarse aunque el mundo insista en enterrarla.<br><br>No hay estructura que alivie. No hay estribillo que salve. No hay aire entre golpes.<br><br>La canción avanza como una caída lenta hacia un punto donde el dolor deja de ser interno y se vuelve declaración.<br><br>“REZA” toma su propio título y lo rompe desde dentro. Ya no es fe, ni súplica, ni devoción. Es la palabra dicha al borde del enfrentamiento, convertida en eco seco, en advertencia final.<br><br>Cada verso es una prueba de supervivencia. Cada silencio, una marca de lo que intentó borrarse. Cada instante, una insistencia brutal en seguir existiendo incluso cuando todo empujaba hacia lo contrario.<br><br>Y cuando parece que todo termina, no hay redención: hay permanencia.<br><br>El resultado no es una canción que se escucha: es una experiencia que se soporta.<br><br>Un punto de ruptura donde el dolor deja de ser silencio y se convierte en respuesta.<br><br><strong>“REZA” pertenece al EP titulado “OLAS NEGRAS”, que será publicado el día 11/09/2026.</strong>',
-          ],
-        ],
-        [
-          'type'      => 'spotify',
-          'title'     => 'La Picarona',
-          'desc'      => 'Sencillo — 2026',
-          'url'       => 'https://open.spotify.com/album/3HKWi6Kse5Omv5fuSentLF?si=YEwh7idyTLGRrrKaTczcqw&nd=1&dlsi=899277464a7d42a3',
-          'thumbnail' => 'assets/portada_la_picarona.png',
-          'synopsis' => [
-    'title'    => 'LA PICARONA',
-    'subtitle' => 'Una explosiva adaptación en salsa de la legendaria "La Fuente de Cacho"',
-    'body'     => 'Desde el corazón de <strong>Santander (Cantabria, España)</strong> nace la inspiración de <em>La Picarona</em>. Una obra que conserva el alma de la tradición, pero la envuelve en un ritmo ardiente, sensual y contagioso, capaz de conquistar cualquier pista de baile del mundo.<br><br>Entre miradas que encienden la noche, sonrisas provocadoras y secretos que solo la madrugada conoce, la historia juega con el deseo, la seducción y la picardía. La protagonista despierta la imaginación de todos a su paso, mientras una pregunta resuena entre los acordes salseros: <strong>¿quién será la picarona que entretiene a ese hombre hasta las dos de la mañana?</strong><br><br>Con elegancia, doble sentido y un inconfundible sabor latino, <em>La Picarona</em> transforma una melodía que ha acompañado durante generaciones al pueblo cántabro en un himno moderno al baile, la pasión y la alegría de vivir.<br><br>Esta versión nace con un propósito claro: llevar el nombre de <strong>Santander</strong>, de <strong>Cantabria</strong> y de la histórica <strong>Fuente de Cacho</strong> mucho más allá de sus fronteras. Porque las grandes canciones no entienden de fronteras: se sienten, se cantan... y, sobre todo, <strong>se bailan</strong>.',
-    ],
-          ],
-        [
-          'type'      => 'spotify',
-          'title'     => 'Soledad',
-          'desc'      => 'Sencillo — 2026 — Incluido en el EP "OLas Negras"',
-          'url'       => 'https://open.spotify.com/track/4waxxKjTuUkXVqDLmOGnIq',
-          'thumbnail' => 'assets/portada_soledad.png',
-          'synopsis'  => [
-            'title'    => 'SOLEDAD',
-            'subtitle' => '',
-            'body'     => '“SOLEDAD” es un crudo blues contemporáneo vestido de melancolía y verdad emocional. La canción retrata el diálogo íntimo entre un hombre y la soledad, convertida aquí no en enemiga, sino en refugio y compañera de supervivencia durante las noches más oscuras.<br><br>Entre ladridos lejanos, lluvia golpeando la ventana y silencios cargados de dolor, la obra explora el desgaste emocional, el insomnio y la lucha por no perder la identidad en medio del sufrimiento. La soledad aparece como el último abrazo cuando todo lo demás desaparece, mientras el protagonista promete resistir y conservar la esperanza de volver a levantar el vuelo.<br><br>Con una narrativa profundamente humana y una estética inspirada en el blues más desnudo y el alma espiritual del gospel, la canción forma parte de una nueva propuesta artística donde la inteligencia artificial se utiliza únicamente como herramienta de creación sonora al servicio de una visión autoral plenamente humana.<br><br>“Cuando Vivir Se Convierte en una Fatiga” no busca impresionar: busca decir la verdad.',
-          ],
-        ],
-        [
-          'type'      => 'spotify',
-          'title'     => 'El Equilibrio del Alma',
-          'desc'      => '',
-          'url'       => 'https://open.spotify.com/track/6F30EkKfPljgsuk42y536I',
-          'thumbnail' => 'assets/portada_equilibio.jpg',
-          'synopsis'  => [
-            'title'    => 'EL EQUILIBRIO DEL ALMA',
-            'subtitle' => '',
-            'body'     => 'Entre la melancolía del jazz nocturno y la emoción más desnuda, "EL EQUILIBRIO DEL ALMA" emerge como una composición elegante e intensa que convierte el dolor sentimental en belleza sonora. La canción retrata el instante exacto en el que el amor deja de ser refugio para convertirse en silencio, distancia y heridas invisibles.<br><br>Con una narrativa íntima y profundamente humana, la obra construye un paisaje emocional donde el frío, la lluvia y el mar simbolizan el derrumbe interior de quien aún ama mientras observa cómo todo se desvanece. La interpretación transmite vulnerabilidad, pero también una delicadeza madura que eleva el tema más allá de una simple canción de desamor.<br><br>Musicalmente, "El equilibrio del alma" navega por sonoridades smooth jazz y soul contemporáneo, creando una atmósfera envolvente, sensual y reflexiva. La canción encuentra equilibrio entre la suavidad instrumental y una letra cargada de imágenes poéticas, logrando un sonido atemporal y emocionalmente profundo.<br><br>"El equilibrio del alma" no busca impresionar con estridencia; conquista desde la honestidad, la atmósfera y el alma.',
-          ],
-        ],
-        [
-          'type'      => 'spotify',
-          'title'     => 'Soledad (Smooth version)',
-          'desc'      => '',
-          'url'       => 'https://open.spotify.com/track/13hsglQVzf8EWII2erlLd0',
-          'thumbnail' => 'assets/portada_soledad_smooth.jpg',
-          'synopsis'  => [
-            'title'    => 'SOLEDAD',
-            'subtitle' => '',
-            'body' => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.', 
-          ],
-        ],
-        [
+                [
   'type'         => 'spotify',
   'title'        => 'Olas Negras',
   'desc'         => 'EP — 2026',
@@ -97,6 +37,71 @@
     'body'     => '"Olas Negras" es un viaje emocional a través de la fragilidad humana, la resistencia y las cicatrices invisibles que deja la vida cuando golpea con más fuerza. Entre atmósferas oscuras, mares embravecidos, noches de insomnio y silencios que pesan más que las palabras, el EP construye un universo íntimo donde el blues, el gospel, el soul y las texturas del smooth jazz se entrelazan para dar voz a emociones profundas y reales.<br><br>Cada canción representa una marea distinta del alma: la soledad convertida en refugio, el amor roto que aún respira entre las ruinas, la lucha contra quienes intentaron destruir la verdad y la necesidad de mantenerse en pie incluso cuando todo parece derrumbarse.<br><br>"Olas Negras" no busca la perfección artificial ni el ruido vacío. Es música hecha desde la herida, desde la dignidad y desde la necesidad de seguir respirando aun en mitad de la tormenta.',
   ],
 ],
+                [
+          'type'      => 'spotify',
+          'title'     => 'Soledad (Smooth version)',
+          'desc'      => '',
+          'url'       => 'https://open.spotify.com/track/13hsglQVzf8EWII2erlLd0',
+          'thumbnail' => 'assets/portada_soledad_smooth.jpg',
+          'synopsis'  => [
+            'title'    => 'SOLEDAD',
+            'subtitle' => '',
+            'body' => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.', 
+          ],
+        ],
+                [
+          'type'      => 'spotify',
+          'title'     => 'El Equilibrio del Alma',
+          'desc'      => '',
+          'url'       => 'https://open.spotify.com/track/6F30EkKfPljgsuk42y536I',
+          'thumbnail' => 'assets/portada_equilibio.jpg',
+          'synopsis'  => [
+            'title'    => 'EL EQUILIBRIO DEL ALMA',
+            'subtitle' => '',
+            'body'     => 'Entre la melancolía del jazz nocturno y la emoción más desnuda, "EL EQUILIBRIO DEL ALMA" emerge como una composición elegante e intensa que convierte el dolor sentimental en belleza sonora. La canción retrata el instante exacto en el que el amor deja de ser refugio para convertirse en silencio, distancia y heridas invisibles.<br><br>Con una narrativa íntima y profundamente humana, la obra construye un paisaje emocional donde el frío, la lluvia y el mar simbolizan el derrumbe interior de quien aún ama mientras observa cómo todo se desvanece. La interpretación transmite vulnerabilidad, pero también una delicadeza madura que eleva el tema más allá de una simple canción de desamor.<br><br>Musicalmente, "El equilibrio del alma" navega por sonoridades smooth jazz y soul contemporáneo, creando una atmósfera envolvente, sensual y reflexiva. La canción encuentra equilibrio entre la suavidad instrumental y una letra cargada de imágenes poéticas, logrando un sonido atemporal y emocionalmente profundo.<br><br>"El equilibrio del alma" no busca impresionar con estridencia; conquista desde la honestidad, la atmósfera y el alma.',
+          ],
+        ],
+                [
+          'type'      => 'spotify',
+          'title'     => 'Soledad',
+          'desc'      => 'Sencillo — 2026 — Incluido en el EP "OLas Negras"',
+          'url'       => 'https://open.spotify.com/track/4waxxKjTuUkXVqDLmOGnIq',
+          'thumbnail' => 'assets/portada_soledad.png',
+          'synopsis'  => [
+            'title'    => 'SOLEDAD',
+            'subtitle' => '',
+            'body'     => '“SOLEDAD” es un crudo blues contemporáneo vestido de melancolía y verdad emocional. La canción retrata el diálogo íntimo entre un hombre y la soledad, convertida aquí no en enemiga, sino en refugio y compañera de supervivencia durante las noches más oscuras.<br><br>Entre ladridos lejanos, lluvia golpeando la ventana y silencios cargados de dolor, la obra explora el desgaste emocional, el insomnio y la lucha por no perder la identidad en medio del sufrimiento. La soledad aparece como el último abrazo cuando todo lo demás desaparece, mientras el protagonista promete resistir y conservar la esperanza de volver a levantar el vuelo.<br><br>Con una narrativa profundamente humana y una estética inspirada en el blues más desnudo y el alma espiritual del gospel, la canción forma parte de una nueva propuesta artística donde la inteligencia artificial se utiliza únicamente como herramienta de creación sonora al servicio de una visión autoral plenamente humana.<br><br>“Cuando Vivir Se Convierte en una Fatiga” no busca impresionar: busca decir la verdad.',
+          ],
+        ],
+                [
+          'type'      => 'spotify',
+          'title'     => 'La Picarona',
+          'desc'      => 'Sencillo — 2026',
+          'url'       => 'https://open.spotify.com/album/3HKWi6Kse5Omv5fuSentLF?si=YEwh7idyTLGRrrKaTczcqw&nd=1&dlsi=899277464a7d42a3',
+          'thumbnail' => 'assets/portada_la_picarona.png',
+          'synopsis' => [
+    'title'    => 'LA PICARONA',
+    'subtitle' => 'Una explosiva adaptación en salsa de la legendaria "La Fuente de Cacho"',
+    'body'     => 'Desde el corazón de <strong>Santander (Cantabria, España)</strong> nace la inspiración de <em>La Picarona</em>. Una obra que conserva el alma de la tradición, pero la envuelve en un ritmo ardiente, sensual y contagioso, capaz de conquistar cualquier pista de baile del mundo.<br><br>Entre miradas que encienden la noche, sonrisas provocadoras y secretos que solo la madrugada conoce, la historia juega con el deseo, la seducción y la picardía. La protagonista despierta la imaginación de todos a su paso, mientras una pregunta resuena entre los acordes salseros: <strong>¿quién será la picarona que entretiene a ese hombre hasta las dos de la mañana?</strong><br><br>Con elegancia, doble sentido y un inconfundible sabor latino, <em>La Picarona</em> transforma una melodía que ha acompañado durante generaciones al pueblo cántabro en un himno moderno al baile, la pasión y la alegría de vivir.<br><br>Esta versión nace con un propósito claro: llevar el nombre de <strong>Santander</strong>, de <strong>Cantabria</strong> y de la histórica <strong>Fuente de Cacho</strong> mucho más allá de sus fronteras. Porque las grandes canciones no entienden de fronteras: se sienten, se cantan... y, sobre todo, <strong>se bailan</strong>.',
+    ],
+          ],
+        [
+          'type'      => 'spotify',
+          'title'     => 'Reza',
+          'desc'      => 'Sencillo — 2026',
+          'url'       => 'https://open.spotify.com/album/6266XHivLjgrzSxdMjLpUT?si=6hDvcV02Q5WpXKaC5pCXrA&nd=1&dlsi=1ae6308e45024d6f',
+          'thumbnail' => 'assets/portada_reza.png',
+          'synopsis'  => [
+            'title'    => 'REZA',
+            'subtitle' => 'No pide ser creída. Impone su existencia.',
+            'body' => 'Nace desde un territorio de presión insoportable, donde la identidad fue puesta a prueba, atacada y empujada al límite del silencio. No habla de un conflicto: lo sobrevive.<br><br>Es un blues roto, sucio, sin redención, atravesado por un gospel que ya no consuela, sino que arde. Una mezcla imposible entre lo espiritual y lo devastado, donde cada nota suena como si fuera la última resistencia antes del colapso.<br><br>Aquí la verdad no es luz ni bandera: es una herida abierta que se niega a cerrarse aunque el mundo insista en enterrarla.<br><br>No hay estructura que alivie. No hay estribillo que salve. No hay aire entre golpes.<br><br>La canción avanza como una caída lenta hacia un punto donde el dolor deja de ser interno y se vuelve declaración.<br><br>“REZA” toma su propio título y lo rompe desde dentro. Ya no es fe, ni súplica, ni devoción. Es la palabra dicha al borde del enfrentamiento, convertida en eco seco, en advertencia final.<br><br>Cada verso es una prueba de supervivencia. Cada silencio, una marca de lo que intentó borrarse. Cada instante, una insistencia brutal en seguir existiendo incluso cuando todo empujaba hacia lo contrario.<br><br>Y cuando parece que todo termina, no hay redención: hay permanencia.<br><br>El resultado no es una canción que se escucha: es una experiencia que se soporta.<br><br>Un punto de ruptura donde el dolor deja de ser silencio y se convierte en respuesta.<br><br><strong>“REZA” pertenece al EP titulado “OLAS NEGRAS”, que será publicado el día 11/09/2026.</strong>',
+          ],
+        ],
+
+
+
+
+
     
    /*   album link = https://open.spotify.com/album/4zjm2PqdNPg17NLbP08ynW
    [
