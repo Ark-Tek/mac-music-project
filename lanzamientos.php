@@ -80,8 +80,23 @@
           'synopsis'  => [
             'title'    => 'SOLEDAD',
             'subtitle' => '',
-            'body' => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.',          ],
+            'body' => '"Soledad" renace en esta versión Smooth Jazz como un viaje íntimo de serenidad, introspección y esperanza. Los acordes cálidos, las melodías envolventes y el pulso elegante del género transforman el dolor en contemplación, invitando al oyente a recorrer el silencio desde una perspectiva más luminosa.<br><br>La canción sigue narrando el encuentro entre un hombre y la soledad, pero aquí deja de ser un peso para convertirse en un espacio de calma donde sanar las heridas, ordenar los recuerdos y recuperar la fuerza interior. La lluvia, la noche y los silencios permanecen como escenarios emocionales, aunque ahora se funden con una atmósfera sofisticada y relajante que abraza en lugar de desgarrar.<br><br>Inspirada en la sensibilidad del Smooth Jazz contemporáneo, esta reinterpretación combina la profundidad de la composición original con una sonoridad elegante y atemporal, donde cada nota respira y cada pausa tiene significado. La inteligencia artificial participa únicamente como herramienta de producción sonora, siempre al servicio de una visión artística plenamente humana.<br><br>Más que una nueva versión, "Soledad" se convierte en una conversación serena con uno mismo: un refugio musical donde la melancolía encuentra belleza, el silencio encuentra voz y la esperanza vuelve a abrirse paso.', 
+          ],
         ],
+        [
+  'type'         => 'spotify',
+  'title'        => 'Olas Negras',
+  'desc'         => 'EP — 2026',
+  'badge'        => 'EP',
+  'embed_height' => 352,
+  'url'          => 'https://open.spotify.com/album/4zjm2PqdNPg17NLbP08ynW',
+  'thumbnail'    => 'assets/portada_olas_negras.png',
+  'synopsis'     => [
+    'title'    => 'OLAS NEGRAS',
+    'subtitle' => '',
+    'body'     => '"Olas Negras" es un viaje emocional a través de la fragilidad humana, la resistencia y las cicatrices invisibles que deja la vida cuando golpea con más fuerza. Entre atmósferas oscuras, mares embravecidos, noches de insomnio y silencios que pesan más que las palabras, el EP construye un universo íntimo donde el blues, el gospel, el soul y las texturas del smooth jazz se entrelazan para dar voz a emociones profundas y reales.<br><br>Cada canción representa una marea distinta del alma: la soledad convertida en refugio, el amor roto que aún respira entre las ruinas, la lucha contra quienes intentaron destruir la verdad y la necesidad de mantenerse en pie incluso cuando todo parece derrumbarse.<br><br>"Olas Negras" no busca la perfección artificial ni el ruido vacío. Es música hecha desde la herida, desde la dignidad y desde la necesidad de seguir respirando aun en mitad de la tormenta.',
+  ],
+],
     
    /*   album link = https://open.spotify.com/album/4zjm2PqdNPg17NLbP08ynW
    [
